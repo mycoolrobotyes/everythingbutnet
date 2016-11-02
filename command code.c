@@ -22,6 +22,7 @@ short autoMode;
 #include "Drive.c"
 #include "RTTTL.c"
 #include "MotorFunctions.c"
+#include "Autonomous1.c"
 
 
 void pre_auton()
