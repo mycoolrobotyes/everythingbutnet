@@ -21,7 +21,7 @@ short autoMode;
 #include "Vex_Competition_Includes.c"   //Main competition background code...do not modify!
 #include "Drive.c"
 #include "RTTTL.c"
-
+#include "MotorFunctions.c"
 
 
 void pre_auton()
