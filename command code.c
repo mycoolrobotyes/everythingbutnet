@@ -52,6 +52,8 @@ task autonomous()
 task usercontrol()
 {
 
+	startTask(speedControl,150);
+
 	while(1)
 	{
 	if(vexRT(Btn8LXmtr2) == 1)
