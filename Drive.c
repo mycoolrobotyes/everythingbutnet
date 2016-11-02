@@ -22,10 +22,10 @@ void Drive(void)
 	static int launching = 0;
 
 		// motors driven by the sticks
-		motor[leftMotor] = deadband(vexRT(Ch3));
-		motor[rightMotor] = deadband(vexRT(Ch2));
-		motor[leftmotorback] = deadband(vexRT(Ch3));
-		motor[rightmotorback] = deadband(vexRT(Ch2));
+		motor[LRmotor] = deadband(vexRT(Ch3));
+		motor[RFmotor] = deadband(vexRT(Ch2));
+		motor[LFmotor] = deadband(vexRT(Ch3));
+		motor[RRmotor] = deadband(vexRT(Ch2));
 
 		if(vexRT[Btn7UXmtr2] == 1)
 		{
