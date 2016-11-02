@@ -25,15 +25,11 @@ short autoMode;
 
 void pre_auton()
 {
-	// Set bStopTasksBetweenModes to false if you want to keep user created tasks running between
+	// Set bStopTasksBetweenModes to false if you want to keep user created tasks runningbetween
 	// Autonomous and Tele-Op modes. You will need to manage all user created tasks if set to false.
 	bStopTasksBetweenModes = true;
   autoMode = 0;
 	// initialize the system....
-
-  // start the speed controller for the arm
-	startTask(speedControl,150);
-	setLauncherSpeed(109);
 
 	bLCDBacklight = true;
 }

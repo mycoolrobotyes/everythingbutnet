@@ -83,19 +83,6 @@ task main()
 			{
 				case 0:
 					displayNextLCDString("do nothing");
-					break;
-				case 1:
-					displayNextLCDString("strategy1");
-					break;
-				case 2:
-					displayNextLCDString("Lazy boy");
-					break;
-				case 3:
-					displayNextLCDString("strategy2");
-					break;
-				default:
-					displayNextLCDString("nothing sel.");
-					break;
 			}
 		  displayLCDPos(0, 0);
 		  nTimeXX = 0;
