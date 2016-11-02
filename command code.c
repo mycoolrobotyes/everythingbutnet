@@ -12,51 +12,15 @@
 task main()
 {
 
-int deadband (int stick)
-{
-	const int db = 7;
-	int astick = abs(stick);
-	int ret = 0;
-	if(astick > db)
-	{
-		astick = pow(1.1,astick/1.5);
 
-		if(astick > 127) astick = 127;
+//Competition Control and Duration Settings
+#pragma competitionControl(Competition)
+#pragma autonomousDuration(20)
+#pragma userControlDuration(120)
 
-		if(stick < 0) astick *= -1;
-		ret = astick;
-	}
-	return ret;
-}
-
-void Drive(void)
-{
-
-		// motors driven by the sticks
-		motor[LFmotor] = deadband(vexRT(Ch3));
-		motor[LRmotor] = deadband(vexRT(Ch2));
-		motor[RRmotor] = deadband(vexRT(Ch3));
-		motor[RFmotor] = deadband(vexRT(Ch2));
-
-
-    if(vexRT[Btn6UXmtr2] == 1)
- 		 {
-		   motor[ballgrabbythingy] = 127;
-		   motor[ballgrabbythingy2] = 127;
-		  }
-		  else if(vexRT[Btn6DXmtr2] == 1)
-  		{
- 		  motor[ballgrabbythingy] = -127;
- 		 	motor[ballgrabbythingy2] = -127;
-  		}
-  		else
- 		 {
-	  	 motor[ballgrabbythingy] = 0;
-	     motor[ballgrabbythingy2] = 0;
-    	}
-
-
- }
+//Main competition background code...do not modify!
+#include "Vex_Competition_Includes.c"
+#include "Drive.c"
 
 
 
