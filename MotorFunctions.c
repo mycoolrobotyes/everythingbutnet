@@ -7,6 +7,15 @@ void driving(int left, int right)
 	motor[RRmotor] = right;
 }
 
+void launcher(int speed)
+{
+	motor[launcher1] = speed;
+	motor[launcher2] = speed;
+	motor[launcher34] = speed;
+	motor[launcher5] = speed;
+	motor[launcher6] = speed;
+}
+
 int motorValue = 0;
 
 task speedControl()
