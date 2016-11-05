@@ -38,7 +38,7 @@ void Drive(void)
 			launcher(127);
 		}
 
-		while(vexRT[Btn5DXmtr2] == 1)
+		while(vexRT[Btn5UXmtr2] == 0)
 		{
 			launcher(0);
 		}
