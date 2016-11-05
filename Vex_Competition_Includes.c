@@ -82,7 +82,7 @@ task main()
 			switch(autoMode)
 			{
 				case 0:
-					displayNextLCDString("do nothing");
+					displayNextLCDString("simple");
 			}
 		  displayLCDPos(0, 0);
 		  nTimeXX = 0;
