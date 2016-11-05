@@ -24,6 +24,32 @@ short autoMode;
 #include "MotorFunctions.c"
 #include "Autonomous1.c"
 
+void Drive(void)
+{
+
+		// motors driven by the sticks
+		motor[LRmotor] = deadband(vexRT(Ch3));
+		motor[RFmotor] = deadband(vexRT(Ch2));
+		motor[LFmotor] = deadband(vexRT(Ch3));
+		motor[RRmotor] = deadband(vexRT(Ch2));
+
+		if(vexRT[Btn5UXmtr2] == 1)
+		{
+			launcher(127);
+		}
+
+		if(vexRT[Btn5DXmtr2] == 1)
+		{
+			launcher(0);
+		}
+		  else
+		  {
+		  	launcher(0);
+		  }
+
+
+ }
+
 
 void pre_auton()
 {
@@ -55,6 +81,8 @@ task usercontrol()
 {
 
 	startTask(speedControl,150);
+
+
 
 	while(1)
 	{
