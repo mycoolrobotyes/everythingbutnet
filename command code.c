@@ -42,10 +42,6 @@ void Drive(void)
 		{
 			launcher(0);
 		}
-		  else
-		  {
-		  	launcher(0);
-		  }
 
 
  }
