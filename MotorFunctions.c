@@ -16,6 +16,8 @@ void launcher(int speed)
 	motor[launcher6] = speed;
 }
 
+
+
 int motorValue = 0;
 
 task speedControl()

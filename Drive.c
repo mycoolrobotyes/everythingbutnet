@@ -1,4 +1,5 @@
 
+
 int deadband (int stick)
 {
 	const int db = 7;
@@ -16,6 +17,7 @@ int deadband (int stick)
 	return ret;
 }
 
+
 void Drive(void)
 {
 
@@ -24,6 +26,20 @@ void Drive(void)
 		motor[RFmotor] = deadband(vexRT(Ch2));
 		motor[LFmotor] = deadband(vexRT(Ch3));
 		motor[RRmotor] = deadband(vexRT(Ch2));
+
+		if(vexRT[Btn5UXmtr2] == 1)
+		{
+			launcher(127);
+		}
+
+		if(vexRT[Btn5DXmtr2] == 1)
+		{
+			launcher(0);
+		}
+		  else
+		  {
+		  	launcher(0);
+		  }
 
 
  }

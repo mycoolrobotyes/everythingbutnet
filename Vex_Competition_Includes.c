@@ -54,7 +54,7 @@ task main()
 	clearLCDLine(0);
 	clearLCDLine(1);
 	displayLCDPos(0, 0);
-	displayNextLCDString("Startup");
+	displayNextLCDString("Starting up");
 	wait1Msec(2000);
 
 
