@@ -33,14 +33,14 @@ void Drive(void)
 		motor[LFmotor] = deadband(vexRT(Ch3));
 		motor[RRmotor] = deadband(vexRT(Ch2));
 
-		if(vexRT[Btn5UXmtr2] == 1)
+		if(vexRT[Btn5DXmtr2] == 1)
 		{
 			launcher(127);
 			wait1Msec(50);
 			launcher(0);
 		}
 
-		if(vexRT[Btn5DXmtr2] == 1)
+		if(vexRT[Btn5UXmtr2] == 1)
 		{
 			launcher(-127);
 			wait1Msec(50);
