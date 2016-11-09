@@ -1,4 +1,5 @@
 #pragma config(Sensor, in1,    Potentiometer,  sensorPotentiometer)
+#pragma config(Sensor, dgtl1,  encoder,        sensorRotation)
 #pragma config(Motor,  port1,           launcher5,     tmotorVex393_HBridge, openLoop, reversed)
 #pragma config(Motor,  port2,           LFmotor,       tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port3,           LRmotor,       tmotorVex393_MC29, openLoop)
@@ -23,33 +24,50 @@ short autoMode;
 #include "RTTTL.c"
 #include "MotorFunctions.c"
 #include "Autonomous1.c"
+#include "Autonomous2.c"
+
 
 void Drive(void)
 {
 
-		// motors driven by the sticks
-		motor[LRmotor] = deadband(vexRT(Ch3));
-		motor[RFmotor] = deadband(vexRT(Ch2));
-		motor[LFmotor] = deadband(vexRT(Ch3));
-		motor[RRmotor] = deadband(vexRT(Ch2));
+	// motors driven by the sticks
+	motor[LRmotor] = deadband(vexRT(Ch3));
+	motor[RFmotor] = deadband(vexRT(Ch2));
+	motor[LFmotor] = deadband(vexRT(Ch3));
+	motor[RRmotor] = deadband(vexRT(Ch2));
 
-		if(vexRT[Btn5DXmtr2] == 1)
+}
+
+void Launchers(void)
+{
+	if(vexRT[Btn5UXmtr2] == 1)
+	{
+		if(SensorValue(Potentiometer) > 2000)
 		{
-			launcher(127);
-			wait1Msec(50);
 			launcher(0);
+			WriteDebugStream("LimitReached\n");
 		}
-
-		if(vexRT[Btn5UXmtr2] == 1)
+		else
 		{
 			launcher(-127);
-			wait1Msec(50);
+		}
+	}
+	else if(vexRT[Btn5DXmtr2] == 1)
+	{
+		if(SensorValue(Potentiometer) > 160)
+		{
+			launcher(127);
+		}
+		else
+		{
 			launcher(0);
 		}
-
- }
-
-
+	}
+	else
+	{
+		launcher(0);
+	}
+}
 void pre_auton()
 {
 	// Set bStopTasksBetweenModes to false if you want to keep user created tasks runningbetween
@@ -57,21 +75,16 @@ void pre_auton()
 	bStopTasksBetweenModes = true;
   autoMode = 0;
 	// initialize the system....
+//startTask(PositionControl,150);
 
-	bLCDBacklight = true;
 }
 
 
 task autonomous()
 {
 
-	switch(autoMode)
-	{
-		case 0:
-			Autonomous1();
-			break;
+			Autonomous2();
 
-		}
 
 
 }
@@ -79,37 +92,37 @@ task autonomous()
 task usercontrol()
 {
 
-	startTask(speedControl,150);
+	//startTask(PositionControl,150);
 
 
 
 	while(1)
 	{
-	if(vexRT(Btn8LXmtr2) == 1)
-  {
-		playYaketysax();
-  }
+		if(vexRT(Btn8LXmtr2) == 1)
+		{
+			playYaketysax();
+		}
 
-  	if(vexRT(Btn8U) == 1)
-  {
-		playYaketysax();
-  }
+		if(vexRT(Btn8U) == 1)
+		{
+			playYaketysax();
+		}
 
-	if(vexRT[Btn8RXmtr2] == 1)
-	{
-		playAxelF();
+		if(vexRT[Btn8RXmtr2] == 1)
+		{
+			playAxelF();
+		}
+		if(vexRT[Btn8UXmtr2] == 1)
+		{
+			playStarWars();
+		}
+
+		if(vexRT(Btn8DXmtr2) == 1)
+		{
+			playMissionImpossible();
+		}
+		Drive();
+		Launchers();
+		WriteDebugStream("%d\n",SensorValue(Potentiometer));
 	}
-
-	if(vexRT[Btn8UXmtr2] == 1)
-	{
-		playStarWars();
-	}
-
-	if(vexRT(Btn8DXmtr2) == 1)
-	{
-		playMissionImpossible();
-	}
-
-	Drive();
-  }
 }
