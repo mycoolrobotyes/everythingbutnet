@@ -90,7 +90,10 @@ task autonomous()
 			Autonomous1();
 			break;
 		case 1:
-			Autonomous2();
+			RedBlueLeftSide();
+			break;
+		case 2:
+			RedBlueRightSide();
 			break;
    }
 

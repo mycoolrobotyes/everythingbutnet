@@ -1,8 +1,8 @@
-const char *autonomous3Name = "Autonomous3";
+const char *autonomous3Name = "RedBlueRightSide";
 
-void Autonomous3(void)
+void RedBlueRightSide(void)
 {
-	while(1);
+	while(1)
 	{
 	drive(127,127);
 	wait10Msec(500);

@@ -1,6 +1,6 @@
-const char *autonomous2Name = "Autonomous2";
+const char *autonomous2Name = "RedBlueLeftSide";
 
-void Autonomous2(void)
+void RedBlueLeftSide(void)
 {
 	while(1)
 	{

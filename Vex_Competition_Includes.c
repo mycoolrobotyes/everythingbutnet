@@ -85,7 +85,10 @@ task main()
 					displayNextLCDString("simple");
 					break;
 				case 1:
-					displayNextLCDString("strategy1");
+					displayNextLCDString("RedBlueLeftSide");
+					break;
+				case 2:
+					displayNextLCDString("RedBlueRightSide");
 					break;
 
 			}
