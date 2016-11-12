@@ -132,6 +132,16 @@ task usercontrol()
 		{
 			playMissionImpossible();
 		}
+
+ if (vexRT[Btn6UXmtr2] == 1)
+ {
+  motor[winch] = 127
+ }
+
+ if (vexRT[Btn6DXmtr2] == 1)
+ {
+  motor[winch] = -127
+ }
 		Drive();
 		Launchers();
 		WriteDebugStream("%d\n",SensorValue(Potentiometer2));
