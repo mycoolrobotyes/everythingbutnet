@@ -1,7 +1,5 @@
 bool speedgood = false;
-long aspeed;
 int speedSetPoint = 0;         //sets the speed
-  int goodcounter;
 
 
 void drive(int left, int right)
@@ -119,4 +117,3 @@ task PositionControl()
 
 }
 */
-

@@ -24,9 +24,11 @@ short autoMode;
 #include "Drive.c"
 #include "RTTTL.c"
 #include "MotorFunctions.c"
+#include "AutonomousFunctions.c"
 #include "Autonomous1.c"
 #include "RedBlueLeftSide.c"
 #include "RedBlueRightSide.c"
+
 
 
 void Drive(void)
@@ -42,16 +44,16 @@ void Drive(void)
 
 void Launchers(void)
 {
-	int8_t arm_speed = 0;
+	char arm_speed = 0;
 
-	arm_speed = deadband(vexRT(XMTR2_Ch3));
+	arm_speed = deadband(vexRT(Ch3Xmtr2));
 
 	if(arm_speed < 0)
 	{
 		if(SensorValue(Potentiometer2) > 2000)
 		{
 			arm_speed = 0;
-			WriteDebugStream("LimitReached\n");
+			writeDebugStream("LimitReached\n");
 		}
 	}
 	else if(arm_speed > 0)
@@ -71,14 +73,16 @@ void pre_auton()
 	bStopTasksBetweenModes = true;
   autoMode = 0;
 	// initialize the system....
-//startTask(PositionControl,150);
+
 
 }
 
 
 task autonomous()
 {
+	RedBlueLeftSide();
 
+/*
 	switch(autoMode)
 	{
 		case 0:
@@ -90,17 +94,13 @@ task autonomous()
 		case 2:
 			RedBlueRightSide();
 			break;
-   }
 
+   }
+*/
 }
 
 task usercontrol()
 {
-
-	//startTask(PositionControl,150);
-
-
-
 	while(1)
 	{
 		if(vexRT(Btn8LXmtr2) == 1)
@@ -129,15 +129,15 @@ task usercontrol()
 
  if (vexRT[Btn6UXmtr2] == 1)
  {
-  motor[winch] = 127
+  motor[winch] = 127;
  }
 
  if (vexRT[Btn6DXmtr2] == 1)
  {
-  motor[winch] = -127
+  motor[winch] = -127;
  }
 		Drive();
 		Launchers();
-		WriteDebugStream("%d\n",SensorValue(Potentiometer2));
+		writeDebugStream("%d\n",SensorValue(Potentiometer2));
 	}
 }
