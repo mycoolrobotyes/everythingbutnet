@@ -84,9 +84,15 @@ void pre_auton()
 task autonomous()
 {
 
+	switch(autoMode)
+	{
+		case 0:
+			Autonomous1();
+			break;
+		case 1:
 			Autonomous2();
-
-
+			break;
+   }
 
 }
 
