@@ -24,7 +24,8 @@ short autoMode;
 #include "RTTTL.c"
 #include "MotorFunctions.c"
 #include "Autonomous1.c"
-#include "Autonomous2.c"
+#include "RedBlueLeftSide.c"
+#include "RedBlueRightSide.c"
 
 
 void Drive(void)
