@@ -1,4 +1,4 @@
-const char *autonomous2Name = "Autonomous2";
+const char *autonomous2Name = "strategy1";
 
 void Autonomous2(void)
 {

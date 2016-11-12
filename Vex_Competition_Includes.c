@@ -83,6 +83,11 @@ task main()
 			{
 				case 0:
 					displayNextLCDString("simple");
+					break;
+				case 1:
+					displayNextLCDString("strategy1");
+					break;
+
 			}
 		  displayLCDPos(0, 0);
 		  nTimeXX = 0;
