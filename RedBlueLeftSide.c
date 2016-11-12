@@ -2,7 +2,7 @@ const char *autonomous2Name = "Autonomous2";
 
 void Autonomous2(void)
 {
-	while(1);
+	while(1)
 	{
 	drive(127,127);
 	wait10Msec(500);
