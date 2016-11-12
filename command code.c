@@ -38,6 +38,16 @@ void Drive(void)
 	motor[LFmotor] = deadband(vexRT(Ch3));
 	motor[RRmotor] = deadband(vexRT(Ch2));
 
+	if (vexRT[Btn6UXmtr2] == 1)
+	{
+		motor[winch] = 127
+	}
+
+	if (vexRT[Btn6DXmtr2] == 1)
+	{
+		motor[winch] = -127
+	}
+
 }
 
 void Launchers(void)
