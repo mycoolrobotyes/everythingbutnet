@@ -74,7 +74,7 @@ task main()
 
 		while (bIfiRobotDisabled)
 		{
-		 	autoMode=SensorValue[Potentiometer ];
+		 	autoMode=SensorValue[Potentiometer1 ];
 			autoMode/= (5595/5);
 
 			// display the choice on the LCD

@@ -1,4 +1,5 @@
-#pragma config(Sensor, in1,    Potentiometer,  sensorPotentiometer)
+#pragma config(Sensor, in1,    Potentiometer1, sensorPotentiometer)
+#pragma config(Sensor, in2,    Potentiometer2, sensorPotentiometer)
 #pragma config(Sensor, dgtl1,  encoder,        sensorRotation)
 #pragma config(Motor,  port1,           launcher5,     tmotorVex393_HBridge, openLoop, reversed)
 #pragma config(Motor,  port2,           LFmotor,       tmotorVex393_MC29, openLoop)
@@ -43,7 +44,7 @@ void Launchers(void)
 {
 	if(vexRT[Btn5UXmtr2] == 1)
 	{
-		if(SensorValue(Potentiometer) > 2000)
+		if(SensorValue(Potentiometer2) > 2000)
 		{
 			launcher(0);
 			WriteDebugStream("LimitReached\n");
@@ -55,7 +56,7 @@ void Launchers(void)
 	}
 	else if(vexRT[Btn5DXmtr2] == 1)
 	{
-		if(SensorValue(Potentiometer) > 160)
+		if(SensorValue(Potentiometer2) > 160)
 		{
 			launcher(127);
 		}
@@ -133,6 +134,6 @@ task usercontrol()
 		}
 		Drive();
 		Launchers();
-		WriteDebugStream("%d\n",SensorValue(Potentiometer));
+		WriteDebugStream("%d\n",SensorValue(Potentiometer2));
 	}
 }
