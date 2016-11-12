@@ -1,6 +1,4 @@
-#pragma config(UART_Usage, UART1, uartVEXLCD, baudRate19200, IOPins, None, None)
-#pragma config(UART_Usage, UART2, uartNotUsed, baudRate4800, IOPins, None, None)
-#pragma config(Sensor, in1,    Potentiometer1, sensorNone)
+#pragma config(Sensor, in1,    Potentiometer1, sensorPotentiometer)
 #pragma config(Sensor, in2,    Potentiometer2, sensorPotentiometer)
 #pragma config(Sensor, dgtl1,  encoder,        sensorRotation)
 #pragma config(Motor,  port1,           launcher5,     tmotorVex393_HBridge, openLoop, reversed)
@@ -44,33 +42,27 @@ void Drive(void)
 
 void Launchers(void)
 {
-	if(vexRT[Btn5UXmtr2] == 1)
+	int8_t arm_speed = 0;
+
+	arm_speed = deadband(vexRT(XMTR2_Ch3));
+
+	if(arm_speed < 0)
 	{
 		if(SensorValue(Potentiometer2) > 2000)
 		{
-			launcher(0);
+			arm_speed = 0;
 			WriteDebugStream("LimitReached\n");
 		}
-		else
-		{
-			launcher(-127);
-		}
 	}
-	else if(vexRT[Btn5DXmtr2] == 1)
+	else if(arm_speed > 0)
 	{
-		if(SensorValue(Potentiometer2) > 160)
+		if(SensorValue(Potentiometer2) < 160)
 		{
-			launcher(127);
-		}
-		else
-		{
-			launcher(0);
+			arm_speed = 0;
 		}
 	}
-	else
-	{
-		launcher(0);
-	}
+
+	launcher(arm_speed);
 }
 void pre_auton()
 {
