@@ -29,17 +29,25 @@ short autoMode;
 #include "RedBlueLeftSide.c"
 #include "RedBlueRightSide.c"
 
-
-
 void Drive(void)
 {
-
 	// motors driven by the sticks
 	motor[LRmotor] = deadband(vexRT(Ch3));
 	motor[RFmotor] = deadband(vexRT(Ch2));
 	motor[LFmotor] = deadband(vexRT(Ch3));
 	motor[RRmotor] = deadband(vexRT(Ch2));
+}
 
+void manageWinch(int desiredSpeed)
+{
+	static winch_speed = 0;
+	if(desired_speed > winch_speed)
+		winch_speed ++;
+	else if(winch_speed > desired_speed)
+		winch_speed --;
+	else
+		winch_speed = 0;
+	motor[winch] = winch_speed;
 }
 
 void Launchers(void)
@@ -66,6 +74,8 @@ void Launchers(void)
 
 	launcher(arm_speed);
 }
+
+
 void pre_auton()
 {
 	// Set bStopTasksBetweenModes to false if you want to keep user created tasks runningbetween
@@ -101,6 +111,7 @@ task autonomous()
 
 task usercontrol()
 {
+	static int winch_speed = 0;
 	while(1)
 	{
 		if(vexRT(Btn8LXmtr2) == 1)
@@ -127,15 +138,20 @@ task usercontrol()
 			playMissionImpossible();
 		}
 
- if (vexRT[Btn6UXmtr2] == 1)
- {
-  motor[winch] = 127;
- }
+		if (vexRT[Btn6UXmtr2] == 1)
+		{
+			winch_speed = 127;
+		}
+		else if (vexRT[Btn6DXmtr2] == 1)
+		{
+			winch_speed = -127;
+		}
+		else
+		{
+			winch_speed = 0;
+		}
 
- if (vexRT[Btn6DXmtr2] == 1)
- {
-  motor[winch] = -127;
- }
+ 		manageWinch(winch_speed);
 		Drive();
 		Launchers();
 		writeDebugStream("%d\n",SensorValue(Potentiometer2));
