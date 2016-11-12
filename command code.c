@@ -1,4 +1,5 @@
 #pragma config(Sensor, in1,    Potentiometer,  sensorPotentiometer)
+#pragma config(Sensor, in5,    Potentiometer2, sensorPotentiometer)
 #pragma config(Sensor, dgtl1,  encoder,        sensorRotation)
 #pragma config(Motor,  port1,           launcher5,     tmotorVex393_HBridge, openLoop, reversed)
 #pragma config(Motor,  port2,           LFmotor,       tmotorVex393_MC29, openLoop)
