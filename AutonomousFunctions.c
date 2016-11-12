@@ -1,5 +1,8 @@
+// constants for autonomous modes
 const int MainTime = 500;
 const int PartTime = 100;
+const int driveToFenceTime = 500;
+
 
 void RightTurnForTime(int time)
 {
