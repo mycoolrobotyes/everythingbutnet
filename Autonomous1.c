@@ -3,13 +3,8 @@ const char *autonomous1Name = "simple";
 
 void Autonomous1(void)
 {
-
-  launcher(127);
-
-  wait1Msec(500);
-
-  launcher(-127);
-
-  wait1Msec(500);
+drive(-127,-127);
+wait1Msec(1000);
+drive(0,0);
 
 }

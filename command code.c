@@ -44,18 +44,34 @@ void Drive(void)
 
 void Launchers(void)
 {
-	char arm_speed = 0;
 
-	arm_speed = deadband(vexRT(Ch3Xmtr2));
+int arm_speed = 0;
 
+ if (vexRT[Btn5DXmtr2] == 1)
+ {
+  arm_speed = 127;
+ }
+
+ else if (vexRT[Btn5UXmtr2] == 1)
+ {
+  arm_speed = -127;
+ }
+ else
+ {
+   arm_speed = 0;
+ }
+	//arm_speed = deadband(vexRT(Ch3Xmtr2));
+
+	writeDebugStream("%d : ",arm_speed);
 	if(arm_speed < 0)
 	{
-		if(SensorValue(Potentiometer2) > 2000)
+		if(SensorValue(Potentiometer2) > 2700)
 		{
 			arm_speed = 0;
 			writeDebugStream("LimitReached\n");
 		}
 	}
+	/*
 	else if(arm_speed > 0)
 	{
 		if(SensorValue(Potentiometer2) < 160)
@@ -63,7 +79,8 @@ void Launchers(void)
 			arm_speed = 0;
 		}
 	}
-
+	*/
+	writeDebugStream("%d\n",arm_speed);
 	launcher(arm_speed);
 }
 void pre_auton()
@@ -80,7 +97,7 @@ void pre_auton()
 
 task autonomous()
 {
-	RedBlueLeftSide();
+	Autonomous1();
 
 /*
 	switch(autoMode)
@@ -132,9 +149,13 @@ task usercontrol()
   motor[winch] = 127;
  }
 
- if (vexRT[Btn6DXmtr2] == 1)
+ else if (vexRT[Btn6DXmtr2] == 1)
  {
   motor[winch] = -127;
+ }
+ else
+ {
+   motor[winch] = 0;
  }
 		Drive();
 		Launchers();
