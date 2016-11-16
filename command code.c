@@ -34,11 +34,6 @@ short autoMode;
 void Drive(void)
 {
 
-// Controller 1/2, Stick L/R, Axis X/Y
-#define C1LX [vexRT Ch4]
-#define C1LY [vexRT Ch3]
-#define C1RX [vexRT Ch1]
-
 		// Y component, X component, Rotation
 		motor[LFmotor] = -C1LY - C1LX - C1RX;
 		motor[RFmotor] =  C1LY - C1LX - C1RX;
