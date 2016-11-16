@@ -34,12 +34,18 @@ short autoMode;
 void Drive(void)
 {
 
-	// motors driven by the sticks
-	motor[LRmotor] = deadband(vexRT(Ch3));
-	motor[RFmotor] = deadband(vexRT(Ch2));
-	motor[LFmotor] = deadband(vexRT(Ch3));
-	motor[RRmotor] = deadband(vexRT(Ch2));
+// Controller 1/2, Stick L/R, Axis X/Y
+#define C1LX [vexRT Ch4]
+#define C1LY [vexRT Ch3]
+#define C1RX [vexRT Ch1]
 
+		// Y component, X component, Rotation
+		motor[LFmotor] = -C1LY - C1LX - C1RX;
+		motor[RFmotor] =  C1LY - C1LX - C1RX;
+		motor[RRmotor] =  C1LY + C1LX - C1RX;
+		motor[LRmotor] = -C1LY + C1LX - C1RX;
+
+		// Motor values can only be updated every 20ms
 }
 
 void Launchers(void)
