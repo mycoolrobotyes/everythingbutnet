@@ -66,6 +66,20 @@ int arm_speed = 0;
  {
    arm_speed = 0;
  }
+
+ if (vexRT[Btn6DXmtr2] == 1)
+ {
+  motor[Claw] = 127;
+ }
+
+ else if (vexRT[Btn6UXmtr2] == 1)
+ {
+  motor[Claw] = -127;
+ }
+ else
+ {
+  motor[Claw] = 0;
+ }
 	//arm_speed = deadband(vexRT(Ch3Xmtr2));
 
 	writeDebugStream("%d : ",arm_speed);

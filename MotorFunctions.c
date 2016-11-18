@@ -15,7 +15,7 @@ void launcher(int speed)
 	motor[launcher1] = speed;
 	motor[launcher2] = speed;
 	motor[launcher3] = speed;
-
+	motor[launcher4] = speed;
 }
 
 
