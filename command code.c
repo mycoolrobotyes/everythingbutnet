@@ -31,9 +31,9 @@ short autoMode;
 
 
 
-#define C1LX [vexRT Ch4]
-#define C1LY [vexRT Ch3]
-#define C1RX [vexRT Ch1]
+#define C1LX (vexRT (Ch4))
+#define C1LY (vexRT (Ch3))
+#define C1RX (vexRT (Ch1))
 
 void Drive(void)
 {
