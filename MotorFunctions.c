@@ -5,18 +5,17 @@ int speedSetPoint = 0;         //sets the speed
 void drive(int left, int right)
 {
 	motor[LFmotor] = left;
-	motor[LRmotor] = left;
+	motor[LBmotor] = left;
 	motor[RFmotor] = right;
-	motor[RRmotor] = right;
+	motor[RBmotor] = right;
 }
 
 void launcher(int speed)
 {
 	motor[launcher1] = speed;
 	motor[launcher2] = speed;
-	motor[launcher34] = speed;
-	motor[launcher5] = speed;
-	motor[launcher6] = speed;
+	motor[launcher3] = speed;
+
 }
 
 

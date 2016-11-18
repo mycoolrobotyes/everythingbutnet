@@ -5,7 +5,7 @@
 #pragma config(Motor,  port2,           RFmotor,       tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port3,           LFmotor,       tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port4,           RBmotor,       tmotorVex393_MC29, openLoop)
-#pragma config(Motor,  port5,           LBmoter,       tmotorVex393_MC29, openLoop)
+#pragma config(Motor,  port5,           LBmotor,       tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port6,           launcher3,     tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port7,           launcher4,     tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port8,           Claw,          tmotorVex393_MC29, openLoop)
@@ -41,8 +41,8 @@ void Drive(void)
 		// Y component, X component, Rotation
 		motor[LFmotor] = -C1LY - C1LX - C1RX;
 		motor[RFmotor] =  C1LY - C1LX - C1RX;
-		motor[RRmotor] =  C1LY + C1LX - C1RX;
-		motor[LRmotor] = -C1LY + C1LX - C1RX;
+		motor[RBmotor] =  C1LY + C1LX - C1RX;
+		motor[LBmotor] = -C1LY + C1LX - C1RX;
 
 		// Motor values can only be updated every 20ms
 		wait10Msec(2);
@@ -150,19 +150,6 @@ task usercontrol()
 			playMissionImpossible();
 		}
 
- if (vexRT[Btn6UXmtr2] == 1)
- {
-  motor[winch] = 127;
- }
-
- else if (vexRT[Btn6DXmtr2] == 1)
- {
-  motor[winch] = -127;
- }
- else
- {
-   motor[winch] = 0;
- }
 		Drive();
 		Launchers();
 		writeDebugStream("%d\n",SensorValue(Potentiometer2));
