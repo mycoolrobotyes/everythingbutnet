@@ -1,9 +1,7 @@
 
 
 // Controller 1/2, Stick L/R, Axis X/Y
-#define C1LX [vexRT Ch4]
-#define C1LY [vexRT Ch3]
-#define C1RX [vexRT Ch1]
+
 
 
 int deadband (int stick)
