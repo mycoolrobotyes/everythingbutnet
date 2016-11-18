@@ -31,12 +31,13 @@ short autoMode;
 
 
 
-#define C1LX [vexRT Ch4]
-#define C1LY [vexRT Ch3]
-#define C1RX [vexRT Ch1]
-
 void Drive(void)
 {
+
+
+   int C1LX [vexRT Ch4]
+   int C1LY [vexRT Ch3]
+   int C1RX [vexRT Ch1]
 
 		// Y component, X component, Rotation
 		motor[LFmotor] = -C1LY - C1LX - C1RX;
@@ -46,6 +47,8 @@ void Drive(void)
 
 		// Motor values can only be updated every 20ms
 		wait10Msec(2);
+
+
 }
 
 void Launchers(void)
