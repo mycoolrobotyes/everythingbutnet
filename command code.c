@@ -28,7 +28,7 @@ short autoMode;
 #include "Autonomous1.c"
 #include "RedBlueLeftSide.c"
 #include "RedBlueRightSide.c"
-
+#include "AutonomousSkills.c"
 
 
 #define C1LX deadband(vexRT (Ch4))

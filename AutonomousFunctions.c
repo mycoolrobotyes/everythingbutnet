@@ -1,28 +1,35 @@
 const int MainTime = 500;
 const int PartTime = 100;
 
+void AllStop(void)
+{
+	drive(0,0,0);
+}
+
 void RightTurnForTime(int time)
 {
-	drive(127,-127);
+	drive(0,0,127);
 	wait10Msec(time);
-	drive(0,0);
+	AllStop();
 }
 
 void LeftTurnForTime(int time)
 {
-	drive(-127,127);
+	drive(0,0,-127);
 	wait10Msec(time);
-	drive(0,0);
+	AllStop();
 }
 
 void FastForwardForTime(int time)
 {
-	drive(127,127);
+	drive(127,127,0);
 	wait10Msec(time);
-	drive(0,0);
+	AllStop();
 }
 
-void AllStop(void)
+void FastBackwardsForTime(int time)
 {
-	drive(0,0);
+	drive(-127,-127,0);
+	wait10Msec(time);
+	AllStop();
 }
