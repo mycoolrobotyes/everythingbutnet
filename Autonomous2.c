@@ -2,11 +2,15 @@ const char *autonomous2Name = "strategy1";
 
 void Autonomous2(void)
 {
-  motor[Claw] = 127;
-  wait1Msec(500);
-  motor[Claw] = 0;
-	FastForwardForTime(1500);
+	FastForwardForTime(500);
+	wait10Msec(PartTime);
+	RightTurnForTime(MainTime);
+	FastForwardForTime(PartTime);
 	launcher(127);
-	wait1Msec(500);
+	wait10Msec(300);
 	launcher(0);
+	LeftTurnForTime(MainTime);
+	wait10Msec(10);
+	RightTurnForTime(MainTime);
+	wait10Msec(10);
 }
