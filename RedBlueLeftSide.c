@@ -2,15 +2,15 @@ const char *RedBlueLeftSideName = "RedBlueLeftSide";
 
 void RedBlueLeftSide(void)
 {
-  motor[Claw] = 127;
-  wait1Msec(500);
-  motor[Claw] = 0;
-	FastForwardForTime(150);
+	FastForwardForTime(500);
+	wait10Msec(PartTime);
+	RightTurnForTime(MainTime);
+	FastForwardForTime(PartTime);
 	launcher(127);
-	wait1Msec(500);
+	wait10Msec(300);
 	launcher(0);
-	FastBackwardsForTime(10);
-	RightTurnForTime(80);
-	launcher(127);
-	LeftTurnForTime(120);
+	LeftTurnForTime(MainTime);
+	wait10Msec(10);
+	RightTurnForTime(MainTime);
+	wait10Msec(10);
 }

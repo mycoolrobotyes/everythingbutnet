@@ -2,31 +2,12 @@ bool speedgood = false;
 int speedSetPoint = 0;         //sets the speed
 
 
-int deadband (int stick)
+void drive(int left, int right)
 {
-	const int db = 7;
-	int astick = abs(stick);
-	int ret = 0;
-	if(astick > db)
-	{
-		astick = pow(1.1,astick/1.5);
-
-		if(astick > 127) astick = 127;
-
-		if(stick < 0) astick *= -1;
-		ret = astick;
-	}
-	return ret;
-}
-
-void drive(int xmove, int ymove, int yaw)
-{
-
-		// Y component, X component, Rotation
-		motor[LFmotor] = -ymove - xmove - yaw;
-		motor[RFmotor] =  ymove - xmove - yaw;
-		motor[RBmotor] =  ymove + xmove - yaw;
-		motor[LBmotor] = -ymove + xmove - yaw;
+	motor[LFmotor] = left;
+	motor[LBmotor] = left;
+	motor[RFmotor] = right;
+	motor[RBmotor] = right;
 }
 
 void launcher(int speed)
