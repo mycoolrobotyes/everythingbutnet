@@ -40,3 +40,24 @@ void FastSidewaysForTime(int time)
 	wait10Msec(time);
 	AllStop();
 }
+
+void armup(void)
+{
+  if(SensorValue(Potentiometer1) > 2000)
+   {
+  	launcher(127);
+   }
+ }
+
+
+
+void armdown(void)
+{
+while(1)
+{
+  if(SensorValue(Potentiometer1) < 347)
+   {
+  	launcher(127);
+   }
+ }
+}

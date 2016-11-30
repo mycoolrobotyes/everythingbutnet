@@ -2,6 +2,9 @@ bool speedgood = false;
 int speedSetPoint = 0;         //sets the speed
 
 
+
+
+
 void drive(int left, int right)
 {
 	motor[LFmotor] = left;

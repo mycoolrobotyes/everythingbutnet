@@ -26,6 +26,7 @@ short autoMode;
 #include "MotorFunctions.c"
 #include "AutonomousFunctions.c"
 #include "Autonomous1.c"
+#include "Autonomous2.c"
 #include "RedBlueLeftSide.c"
 #include "RedBlueRightSide.c"
 #include "AutonomousSkills.c"
@@ -117,7 +118,7 @@ void pre_auton()
 
 task autonomous()
 {
-	AutonomousSkills();
+	Autonomous2();
 
 /*
 	switch(autoMode)
