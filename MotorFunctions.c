@@ -18,7 +18,15 @@ void launcher(int speed)
 	motor[launcher4] = speed;
 }
 
+void drive(int xmove, int ymove, int yaw)
+{
 
+		// Y component, X component, Rotation
+		motor[LFmotor] = -ymove - xmove - yaw;
+		motor[RFmotor] =  ymove - xmove - yaw;
+		motor[RBmotor] =  ymove + xmove - yaw;
+		motor[LBmotor] = -ymove + xmove - yaw;
+}
 /*
 int motorValue = 0;
 

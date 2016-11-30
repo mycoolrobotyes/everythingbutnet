@@ -1,0 +1,61 @@
+const char *AutonomousSkillsName = "Skills";
+
+const int Turn90 = 100;
+const int StepOneTime = 180;
+const int ClawOpenTime = 500;
+const int LauncherUpTime = 500;
+const int LauncherStay = -10;
+
+void ClawOpen(void)
+{
+	motor[Claw] = 127;
+  wait1Msec(ClawOpenTime);
+  motor[Claw] = 0;
+}
+
+void ClawClose(void)
+{
+	motor[Claw] = 127;
+	wait10Msec(30);
+	motor[Claw] = 0;
+}
+
+void LauncherUp(int time)
+{
+	launcher(-127);
+	wait1Msec(time);
+	launcher(0);
+}
+
+void LauncherDown(int time)
+{
+	launcher(-30);
+	wait1Msec(time);
+	launcher(0);
+}
+
+void AutonomousSkills(void)
+{
+  ClawOpen();
+  LauncherUp(LauncherUpTime);
+	FastForwardForTime(StepOneTime);
+	ClawClose();
+	LauncherUp(300);
+	FastForwardForTime(40);
+	FastBackwardsForTime(100);
+	FastSidewaysForTime(60);
+	LauncherDown(100);
+	/*
+	FastSidewaysForTime(400);
+	FastBackwardsForTime(StepOneTime);
+	wait10Msec(200);
+	FastForwardForTime(StepOneTime);
+	ClawOpen();
+
+	ClawClose();
+	FastBackwardsForTime(StepOneTime);
+	wait10Msec(200);
+	FastForwardForTime(StepOneTime);
+	ClawOpen();
+	*/
+}
