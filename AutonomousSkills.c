@@ -2,23 +2,9 @@ const char *AutonomousSkillsName = "Skills";
 
 const int Turn90 = 100;
 const int StepOneTime = 180;
-const int ClawOpenTime = 500;
 const int LauncherUpTime = 500;
 const int LauncherStay = -10;
 
-void ClawOpen(void)
-{
-	motor[Claw] = 127;
-  wait1Msec(ClawOpenTime);
-  motor[Claw] = 0;
-}
-
-void ClawClose(void)
-{
-	motor[Claw] = 127;
-	wait10Msec(30);
-	motor[Claw] = 0;
-}
 
 void LauncherUp(int time)
 {

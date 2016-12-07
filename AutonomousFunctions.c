@@ -1,5 +1,6 @@
 const int MainTime = 500;
 const int PartTime = 100;
+const int ClawOpenTime = 500;
 
 void AllStop(void)
 {
@@ -41,20 +42,34 @@ void FastSidewaysForTime(int time)
 	AllStop();
 }
 
-void armup(void)
+void armup()
 {
-  if(SensorValue(Potentiometer1) > 2000)
+  if(SensorValue(Potentiometer1) < 2000)
    {
-  	launcher(127);
+  	launcher(-127);
    }
  }
 
 
 
-void armdown(void)
+void armdown()
 {
-  if(SensorValue(Potentiometer1) < 347)
+  if(SensorValue(Potentiometer1) > 347)
    {
   	launcher(127);
    }
+}
+
+void ClawOpen(void)
+{
+	motor[Claw] = 127;
+  wait1Msec(ClawOpenTime);
+  motor[Claw] = 0;
+}
+
+void ClawClose(void)
+{
+	motor[Claw] = 127;
+	wait10Msec(30);
+	motor[Claw] = 0;
 }
