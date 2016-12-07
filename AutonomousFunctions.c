@@ -53,11 +53,8 @@ void armup(void)
 
 void armdown(void)
 {
-while(1)
-{
   if(SensorValue(Potentiometer1) < 347)
    {
   	launcher(127);
    }
- }
 }
