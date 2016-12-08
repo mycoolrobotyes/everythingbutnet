@@ -22,16 +22,16 @@ void LauncherDown(int time)
 
 void AutonomousSkills(void)
 {
-  ClawOpen();
-  LauncherUp(LauncherUpTime);
-	FastForwardForTime(StepOneTime);
+  FastForwardForTime(156);
+	wait10Msec(PartTime);
+	ClawOpen();
+	armup();
 	ClawClose();
 	LauncherUp(300);
 	FastForwardForTime(40);
 	FastBackwardsForTime(100);
 	FastSidewaysForTime(60);
 	LauncherDown(100);
-	/*
 	FastSidewaysForTime(400);
 	FastBackwardsForTime(StepOneTime);
 	wait10Msec(200);
@@ -43,5 +43,5 @@ void AutonomousSkills(void)
 	wait10Msec(200);
 	FastForwardForTime(StepOneTime);
 	ClawOpen();
-	*/
+
 }
