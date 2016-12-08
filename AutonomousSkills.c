@@ -6,19 +6,6 @@ const int LauncherUpTime = 500;
 const int LauncherStay = -10;
 
 
-void LauncherUp(int time)
-{
-	launcher(-127);
-	wait1Msec(time);
-	launcher(0);
-}
-
-void LauncherDown(int time)
-{
-	launcher(-30);
-	wait1Msec(time);
-	launcher(0);
-}
 
 void AutonomousSkills(void)
 {

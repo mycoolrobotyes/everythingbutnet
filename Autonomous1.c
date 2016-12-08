@@ -3,12 +3,15 @@ const char *autonomous1Name = "simple";
 
 void Autonomous1(void)
 {
-  motor[Claw] = -127;
-  wait1Msec(500);
-  motor[Claw] = 0;
-	FastForwardForTime(150);
-	launcher(127);
-	wait10Msec(100);
-	launcher(0);
-	FastBackwardsForTime(10);
+	FastForwardForTime(78);
+	wait10Msec(PartTime);
+  RightTurnForTime(SmallTime);
+  FastForwardForTime(60);
+  ClawClose();
+  armup();
+  ClawClose();
+  LeftTurnForTime(PartTime);
+	FastForwardForTime(78);
+	wait10Msec(PartTime);
+	LauncherDown(1000);
 }

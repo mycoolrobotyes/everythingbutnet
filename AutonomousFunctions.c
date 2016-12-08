@@ -1,7 +1,21 @@
 const int MainTime = 500;
 const int PartTime = 100;
+const int SmallTime = 45;
 const int ClawOpenTime = 500;
 
+void LauncherUp(int time)
+{
+	launcher(-127);
+	wait1Msec(time);
+	launcher(0);
+}
+
+void LauncherDown(int time)
+{
+	launcher(-30);
+	wait1Msec(time);
+	launcher(0);
+}
 void AllStop(void)
 {
 	drive(0,0,0);
@@ -70,6 +84,6 @@ void ClawOpen(void)
 void ClawClose(void)
 {
 	motor[Claw] = 127;
-	wait10Msec(30);
+	wait10Msec(140);
 	motor[Claw] = 0;
 }

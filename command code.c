@@ -118,7 +118,7 @@ void pre_auton()
 
 task autonomous()
 {
-	Autonomous2();
+	Autonomous1();
 
 /*
 	switch(autoMode)
