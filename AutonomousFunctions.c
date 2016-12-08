@@ -1,6 +1,6 @@
 const int MainTime = 500;
 const int PartTime = 100;
-const int SmallTime = 60;
+const int SmallTime = 70;
 const int SmallerTime = 45;
 const int ClawOpenTime = 500;
 
@@ -13,7 +13,7 @@ void LauncherUp(int time)
 
 void LauncherDown(int time)
 {
-	launcher(-30);
+	launcher(127);
 	wait1Msec(time);
 	launcher(0);
 }
@@ -77,7 +77,7 @@ void armdown()
 
 void ClawOpen(void)
 {
-	motor[Claw] = 127;
+	motor[Claw] = -127;
   wait1Msec(ClawOpenTime);
   motor[Claw] = 0;
 }
