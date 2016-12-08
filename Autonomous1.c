@@ -12,6 +12,6 @@ void Autonomous1(void)
   ClawClose();
   LeftTurnForTime(PartTime);
 	FastForwardForTime(78);
-	wait10Msec(PartTime);
+	wait10Msec(700);
 	LauncherDown(1000);
 }
