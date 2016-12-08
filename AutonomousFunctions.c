@@ -1,6 +1,7 @@
 const int MainTime = 500;
 const int PartTime = 100;
-const int SmallTime = 45;
+const int SmallTime = 60;
+const int SmallerTime = 45;
 const int ClawOpenTime = 500;
 
 void LauncherUp(int time)
