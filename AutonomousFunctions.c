@@ -65,6 +65,19 @@ void armup()
    }
  }
 
+void ArmupWithClaw()
+{
+  if(SensorValue(Potentiometer1) > 2000)
+   {
+  	launcher(0);
+   }
+   else
+   {
+  	motor[Claw] = 127;
+   	launcher(-127);
+  }
+
+ }
 
 
 void armdown()
@@ -78,13 +91,13 @@ void armdown()
 void ClawOpen(void)
 {
 	motor[Claw] = -127;
-  wait1Msec(280);
+  wait1Msec(-280);
   motor[Claw] = 0;
 }
 
 void ClawClose(void)
 {
 	motor[Claw] = 127;
-	wait10Msec(-150);
+	wait10Msec(150);
 	motor[Claw] = 0;
 }
