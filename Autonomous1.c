@@ -5,12 +5,12 @@ void Autonomous1(void)
 {
 	FastForwardForTime(78);
 	wait10Msec(PartTime);
-  RightTurnForTime(SmallerTime);
+  LeftTurnForTime(60);
   FastForwardForTime(60);
   ClawClose();
   armup();
   ClawClose();
-  LeftTurnForTime(60);
+  RightTurnForTime(60);
   ClawClose();
 	FastForwardForTime(100);
 	LauncherDown(800);
