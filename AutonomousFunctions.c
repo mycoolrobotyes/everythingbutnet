@@ -78,7 +78,7 @@ void armdown()
 void ClawOpen(void)
 {
 	motor[Claw] = -127;
-  wait1Msec(ClawOpenTime);
+  wait1Msec(140);
   motor[Claw] = 0;
 }
 
