@@ -11,9 +11,9 @@ void Autonomous1(void)
   ArmupWithClaw();
   RightTurnForTime(50);
   ClawClose();
-	FastForwardForTime(100);
+	FastForwardForTime(130);
 	ClawClose();
 	LauncherDown(800);
-	ClawOpen();
+	ClawOpen2();
 	wait10Msec(PartTime);
 }

@@ -6,7 +6,6 @@ const int LauncherUpTime = 500;
 const int LauncherStay = -10;
 
 
-
 void AutonomousSkills(void)
 {
   FastForwardForTime(140);

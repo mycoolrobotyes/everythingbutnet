@@ -4,6 +4,6 @@ void Autonomous2(void)
 {
 	FastForwardForTime(156);
 	wait10Msec(PartTime);
-	ClawOpen();
+	ClawClose2();
 	armup();
 }

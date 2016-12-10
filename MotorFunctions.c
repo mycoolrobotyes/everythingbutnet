@@ -3,8 +3,6 @@ int speedSetPoint = 0;         //sets the speed
 
 
 
-
-
 void drive(int left, int right)
 {
 	motor[LFmotor] = left;
@@ -12,7 +10,6 @@ void drive(int left, int right)
 	motor[RFmotor] = right;
 	motor[RBmotor] = right;
 }
-
 void launcher(int speed)
 {
 	motor[launcher1] = speed;

@@ -91,7 +91,7 @@ void armdown()
 void ClawOpen(void)
 {
 	motor[Claw] = -127;
-  wait1Msec(280);
+  wait10Msec(280);
   motor[Claw] = 0;
 }
 
@@ -99,5 +99,19 @@ void ClawClose(void)
 {
 	motor[Claw] = 127;
 	wait10Msec(150);
+	motor[Claw] = 0;
+}
+
+void ClawClose2(void)
+{
+	motor[Claw] = 127;
+	wait10Msec(40);
+	motor[Claw] = 0;
+}
+
+void ClawOpen2(void)
+{
+	motor[Claw] = -127;
+	wait10Msec(60);
 	motor[Claw] = 0;
 }
