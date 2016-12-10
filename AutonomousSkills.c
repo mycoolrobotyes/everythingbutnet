@@ -9,12 +9,12 @@ const int LauncherStay = -10;
 
 void AutonomousSkills(void)
 {
-  FastForwardForTime(156);
+  FastForwardForTime(140);
 	wait10Msec(PartTime);
 	ClawOpen();
 	armup();
-	ClawClose();
 	LauncherUp(300);
+	ClawClose();
 	FastForwardForTime(40);
 	FastBackwardsForTime(100);
 	FastSidewaysForTime(60);
