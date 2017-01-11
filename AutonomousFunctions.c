@@ -112,6 +112,6 @@ void ClawClose2(void)
 void ClawOpen2(void)
 {
 	motor[Claw] = -127;
-	wait10Msec(60);
+	wait10Msec(130);
 	motor[Claw] = 0;
 }
