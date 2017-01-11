@@ -6,7 +6,7 @@ void Autonomous1(void)
 	FastForwardForTime(78);
 	wait10Msec(PartTime);
   LeftTurnForTime(60);
-  FastForwardForTime(60);
+  FastForwardForTime(80);
   ClawClose();
   ArmupWithClaw();
   RightTurnForTime(50);

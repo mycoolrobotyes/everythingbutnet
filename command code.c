@@ -111,8 +111,6 @@ void pre_auton()
 	bStopTasksBetweenModes = true;
   autoMode = 0;
 	// initialize the system....
-
-
 }
 
 
@@ -139,8 +137,10 @@ Autonomous1();
 
 task usercontrol()
 {
+
 	while(1)
 	{
+		/*
 		if(vexRT(Btn8LXmtr2) == 1)
 		{
 			playYaketysax();
@@ -164,6 +164,7 @@ task usercontrol()
 		{
 			playMissionImpossible();
 		}
+		*/
 
 		Drive();
 		Launchers();
