@@ -54,12 +54,12 @@ void Launchers(void)
 
 int arm_speed = 0;
 
- if (vexRT[Btn5DXmtr2] == 1)
+ if (vexRT[Btn5D] == 1)
  {
   arm_speed = 127;
  }
 
- else if (vexRT[Btn5UXmtr2] == 1)
+ else if (vexRT[Btn5U] == 1)
  {
   arm_speed = -127;
  }
@@ -68,12 +68,12 @@ int arm_speed = 0;
    arm_speed = 0;
  }
 
- if (vexRT[Btn6DXmtr2] == 1)
+ if (vexRT[Btn6D] == 1)
  {
   motor[Claw] = 127;
  }
 
- else if (vexRT[Btn6UXmtr2] == 1)
+ else if (vexRT[Btn6U] == 1)
  {
   motor[Claw] = -127;
  }
