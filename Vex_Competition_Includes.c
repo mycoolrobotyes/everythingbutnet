@@ -88,7 +88,7 @@ task main()
 					displayNextLCDString("simple");
 					break;
 				case 2:
-					displayNextLCDString("Lazy boy");
+					displayNextLCDString("Hang");
 					break;
 				case 3:
 					displayNextLCDString("strategy2");

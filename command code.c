@@ -126,7 +126,7 @@ Autonomous1();
 			Autonomous2();
 			break;
 		case 2:
-			RedBlueRightSide();
+			Autonomous3();
 			break;
 
    }
