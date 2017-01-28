@@ -66,16 +66,40 @@ task main()
 	while (true)
 	{
 
+		/*
 		clearLCDLine(0);
 		clearLCDLine(1);
+		*/
 		displayLCDPos(0, 0);
 
 		while (bIfiRobotDisabled)
 		{
+		 	autoMode=SensorValue[potentiometer ];
+			autoMode/= (5595/5);
+
+			// display the choice on the LCD
+			displayLCDPos(0, 0);
+			switch(autoMode)
+			{
+				case 0:
+					displayNextLCDString("do nothing");
+					break;
+				case 1:
+					displayNextLCDString("strategy1");
+					break;
+				case 2:
+					displayNextLCDString("Lazy boy");
+					break;
+				case 3:
+					displayNextLCDString("strategy2");
+					break;
+				default:
+					displayNextLCDString("nothing sel.");
+					break;
+			}
 		  displayLCDPos(0, 0);
-		  displayNextLCDString("Disabled");
 		  nTimeXX = 0;
-			while (true)
+			if (true)
 			{
 				displayStatusAndTime();
 				if (!bIfiRobotDisabled)
@@ -209,7 +233,7 @@ static void displayStatusAndTime()
 	displayNextLCDNumber(nTimeXX % 10, 1);
 }
 
-
+/*
 static void UserControlCodePlaceholderForTesting()
 {
   // Following code is simply for initial debuggging.
@@ -221,6 +245,7 @@ static void UserControlCodePlaceholderForTesting()
 	wait1Msec(100);
 	++nTimeXX;
 }
+
 
 static void AutonomousCodePlaceholderForTesting()
 {
@@ -234,3 +259,4 @@ static void AutonomousCodePlaceholderForTesting()
 		++nTimeXX;
 	}
 }
+*/
