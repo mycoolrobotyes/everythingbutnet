@@ -73,7 +73,8 @@ void ArmupWithClaw()
    }
    else
    {
-  	motor[Claw] = 127;
+  	motor[Claw1] = 127;
+  	motor[Claw2] = 127;
    	launcher(-127);
   }
 
@@ -90,28 +91,36 @@ void armdown()
 
 void ClawOpen(void)
 {
-	motor[Claw] = -127;
+ 	motor[Claw1] = 127;
+ 	motor[Claw2] = 127;
   wait10Msec(280);
-  motor[Claw] = 0;
+ 	motor[Claw1] = 0;
+ 	motor[Claw2] = 0;
 }
 
 void ClawClose(void)
 {
-	motor[Claw] = 127;
+ 	motor[Claw1] = 127;
+  motor[Claw2] = 127;
 	wait10Msec(150);
-	motor[Claw] = 0;
+  motor[Claw1] = 0;
+  motor[Claw2] = 0;
 }
 
 void ClawClose2(void)
 {
-	motor[Claw] = 127;
+  motor[Claw1] = 127;
+  motor[Claw2] = 127;
 	wait10Msec(40);
-	motor[Claw] = 0;
+  motor[Claw1] = 0;
+ 	motor[Claw2] = 0;
 }
 
 void ClawOpen2(void)
 {
-	motor[Claw] = -127;
+ 	motor[Claw1] = -127;
+ 	motor[Claw2] = -127;
 	wait10Msec(130);
-	motor[Claw] = 0;
+ 	motor[Claw1] = 0;
+ 	motor[Claw2] = 0;
 }
