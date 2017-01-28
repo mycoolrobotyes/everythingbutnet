@@ -27,6 +27,7 @@ short autoMode;
 #include "AutonomousFunctions.c"
 #include "Autonomous1.c"
 #include "Autonomous2.c"
+#include "Autonomous3.c"
 #include "RedBlueLeftSide.c"
 #include "RedBlueRightSide.c"
 #include "AutonomousSkills.c"
