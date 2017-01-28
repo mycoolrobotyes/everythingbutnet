@@ -1,5 +1,5 @@
 //Do Nothing code
-const char *autonomous1Name = "simple";
+const char *autonomous1Name = "pickupbox";
 
 void Autonomous1(void)
 {

@@ -82,10 +82,10 @@ task main()
 			switch(autoMode)
 			{
 				case 0:
-					displayNextLCDString("do nothing");
+					displayNextLCDString("pickupbox");
 					break;
 				case 1:
-					displayNextLCDString("strategy1");
+					displayNextLCDString("simple");
 					break;
 				case 2:
 					displayNextLCDString("Lazy boy");

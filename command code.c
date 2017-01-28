@@ -47,6 +47,7 @@ void Drive(void)
 		wait10Msec(2);
 }
 
+
 void Launchers(void)
 {
 
@@ -115,21 +116,21 @@ task autonomous()
 {
 Autonomous1();
 
-/*
+
 	switch(autoMode)
 	{
 		case 0:
 			Autonomous1();
 			break;
 		case 1:
-			RedBlueLeftSide();
+			Autonomous2();
 			break;
 		case 2:
 			RedBlueRightSide();
 			break;
 
    }
-*/
+
 }
 
 task usercontrol()
