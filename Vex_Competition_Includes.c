@@ -90,12 +90,6 @@ task main()
 				case 2:
 					displayNextLCDString("Hang");
 					break;
-				case 3:
-					displayNextLCDString("strategy2");
-					break;
-				default:
-					displayNextLCDString("nothing sel.");
-					break;
 			}
 		  displayLCDPos(0, 0);
 		  nTimeXX = 0;
