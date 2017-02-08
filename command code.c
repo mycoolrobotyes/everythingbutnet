@@ -33,13 +33,13 @@ short autoMode;
 #include "AutonomousSkills.c"
 
 
-#define C1LX deadband(vexRT (Ch4))
-#define C1LY deadband(vexRT (Ch3))
-#define C1RX deadband(vexRT (Ch1))
-
 void Drive(void)
 {
-
+		// motors driven by the sticks
+		motor[LFmotor] = deadband(vexRT(Ch3));
+		motor[RFmotor] = deadband(vexRT(Ch2));
+		motor[LBmotor] = deadband(vexRT(Ch3));
+		motor[RBmotor] = deadband(vexRT(Ch2));
 }
 
 void pre_auton()

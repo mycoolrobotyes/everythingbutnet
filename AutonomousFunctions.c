@@ -19,43 +19,37 @@ void LauncherDown(int time)
 }
 void AllStop(void)
 {
-	drive(0,0,0);
+	drive(0,0);
 }
 
 void RightTurnForTime(int time)
 {
-	drive(0,0,127);
+	drive(0,0);
 	wait10Msec(time);
 	AllStop();
 }
 
 void LeftTurnForTime(int time)
 {
-	drive(0,0,-127);
+	drive(0,0);
 	wait10Msec(time);
 	AllStop();
 }
 
 void FastForwardForTime(int time)
 {
-	drive(0,127,0);
+	drive(0,0);
 	wait10Msec(time);
 	drive(0,0);
 }
 
 void FastBackwardsForTime(int time)
 {
-	drive(0,-127,0);
+	drive(0,0);
 	wait1Msec(time);
 	AllStop();
 }
 
-void FastSidewaysForTime(int time)
-{
-	drive(-127,0,0);
-	wait10Msec(time);
-	AllStop();
-}
 
 void armup()
 {

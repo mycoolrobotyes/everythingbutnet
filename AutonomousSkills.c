@@ -16,9 +16,7 @@ void AutonomousSkills(void)
 	ClawClose();
 	FastForwardForTime(40);
 	FastBackwardsForTime(100);
-	FastSidewaysForTime(60);
 	LauncherDown(100);
-	FastSidewaysForTime(500);
 	FastBackwardsForTime(StepOneTime);
 	wait10Msec(200);
 	FastForwardForTime(StepOneTime);
