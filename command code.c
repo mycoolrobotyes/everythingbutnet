@@ -39,13 +39,7 @@ short autoMode;
 
 void Drive(void)
 {
-		// Y component, X component, Rotation
-		motor[LFmotor] = -C1LY - C1LX - C1RX;
-		motor[RFmotor] =  C1LY - C1LX - C1RX;
-		motor[RBmotor] =  C1LY + C1LX - C1RX;
-		motor[LBmotor] = -C1LY + C1LX - C1RX;
-		// Motor values can only be updated every 20ms
-		wait10Msec(2);
+
 }
 
 void pre_auton()
