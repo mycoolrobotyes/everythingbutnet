@@ -48,10 +48,14 @@ void Drive(void)
 		wait10Msec(2);
 }
 
+void pre_auton()
+{
+bLCDBacklight = true;
+}
+
 
 void Launchers(void)
 {
-
 int arm_speed = 0;
 
  if (vexRT[Btn5D] == 1)
