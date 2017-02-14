@@ -5,8 +5,6 @@ const char *autonomous3Name = "Hang!";
 void Autonomous3(void)
 {
 
-
-
-
+	armup();
 
 }
