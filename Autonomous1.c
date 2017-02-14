@@ -3,8 +3,13 @@ const char *autonomous1Name = "pickupbox";
 
 void Autonomous1(void)
 {
-	FastForwardForTime(78);
+	FastForwardForTime(156);
 	wait10Msec(PartTime);
   LeftTurnForTime(60);
-  FastForwardForTime(50);
+  FastForwardForTime(70);
+  LeftTurnForTime(60);
+  ClawClose();
+  FastBackwardsForTime(50);
+  ArmupWithClaw();
+  ClawOpen();
 }

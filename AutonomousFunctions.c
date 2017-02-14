@@ -53,7 +53,7 @@ void FastBackwardsForTime(int time)
 
 void armup()
 {
-  if(SensorValue(Potentiometer1) < 2000)
+  if(SensorValue(Potentiometer1) < 2400)
    {
   	launcher(-127);
    }
@@ -61,7 +61,7 @@ void armup()
 
 void ArmupWithClaw()
 {
-  if(SensorValue(Potentiometer1) > 2000)
+  if(SensorValue(Potentiometer1) > 2400)
    {
   	launcher(0);
    }
@@ -77,7 +77,7 @@ void ArmupWithClaw()
 
 void armdown()
 {
-  if(SensorValue(Potentiometer1) > 347)
+  if(SensorValue(Potentiometer1) > 300)
    {
   	launcher(127);
    }
