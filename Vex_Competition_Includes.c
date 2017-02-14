@@ -77,8 +77,42 @@ task main()
 
 		clearLCDLine(0);
 		clearLCDLine(1);
-		 	autoMode=SensorValue[Potentiometer2 ];
-			autoMode/= (5595/3);
+			 	int BtnPressed;
+		 	BtnPressed = nLCDButtons;
+		 	autoMode = BtnPressed;
+
+			// display the choice on the LCD
+			displayLCDPos(0, 0);
+			switch(autoMode)
+			{
+					if (BtnPressed == 1)
+		 			{
+		 				case 0:
+							displayNextLCDString("pickupbox");
+							break;
+					}
+
+					if (BtnPressed == 2)
+					{
+						case 1:
+							displayNextLCDString("simple");
+							break;
+					}
+					if (BtnPressed == 4)
+					{
+						case 2:
+							displayNextLCDString("Hang");
+							break;
+					}
+				}
+
+		// 	autoMode=SensorValue[Potentiometer2 ];
+		//	autoMode/= (5595/3);
+		/*
+				autoMode =	int BtnPressed;
+		 	BtnPressed = nLCDButtons
+
+
 
 			// display the choice on the LCD
 			displayLCDPos(0, 0);
@@ -94,6 +128,7 @@ task main()
 					displayNextLCDString("Hang");
 					break;
 			}
+			*/
 		  displayLCDPos(0, 0);
 		  nTimeXX = 0;
 			if (true)
@@ -119,6 +154,7 @@ task main()
 				wait1Msec(25);
 				++nTimeXX;
 			}
+
 	  }
 
 		nTimeXX = 0;
