@@ -72,6 +72,26 @@ task main()
 
 		while (bIfiRobotDisabled)
 		{
+<<<<<<< HEAD
+=======
+		 	autoMode=SensorValue[Potentiometer2 ];
+			autoMode/= (5595/5);
+
+			// display the choice on the LCD
+			displayLCDPos(0, 0);
+			switch(autoMode)
+			{
+				case 0:
+					displayNextLCDString("pickupbox");
+					break;
+				case 1:
+					displayNextLCDString("simple");
+					break;
+				case 2:
+					displayNextLCDString("Hang");
+					break;
+			}
+>>>>>>> parent of d3f0dc7... menu LCD display is working
 		  displayLCDPos(0, 0);
 		  displayNextLCDString("Disabled");
 		  nTimeXX = 0;
