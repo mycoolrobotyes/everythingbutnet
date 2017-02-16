@@ -24,14 +24,14 @@ void AllStop(void)
 
 void RightTurnForTime(int time)
 {
-	drive(0,0);
+	drive(127,-127);
 	wait10Msec(time);
 	AllStop();
 }
 
 void LeftTurnForTime(int time)
 {
-	drive(127,-127);
+	drive(-127,127);
 	wait10Msec(time);
 	AllStop();
 }
@@ -69,8 +69,8 @@ void armdown()
 
 void ClawOpen(void)
 {
- 	motor[Claw1] = 127;
- 	motor[Claw2] = 127;
+ 	motor[Claw1] = -127;
+ 	motor[Claw2] = -127;
   wait10Msec(280);
  	motor[Claw1] = 0;
  	motor[Claw2] = 0;
