@@ -72,26 +72,7 @@ task main()
 
 		while (bIfiRobotDisabled)
 		{
-	   	clearLCDLine(0);
-		  clearLCDLine(1);
-		 	autoMode=SensorValue[Potentiometer2 ];
-			autoMode/= (5595/3);
-
-			// display the choice on the LCD
-			displayLCDPos(0, 0);
-			switch(autoMode)
-			{
-				case 0:
-					displayNextLCDString("pickupbox");
-					break;
-				case 1:
-					displayNextLCDString("simple");
-					break;
-				case 2:
-					displayNextLCDString("Hang");
-					break;
-			}
-		  displayLCDPos(1, 0);
+		  displayLCDPos(0, 0);
 		  displayNextLCDString("Disabled");
 		  nTimeXX = 0;
 			while (true)

@@ -112,7 +112,9 @@ void pre_auton()
 task autonomous()
 {
 
+ Autonomous1();
 
+/*
 	switch(autoMode)
 	{
 		case 0:
@@ -126,7 +128,7 @@ task autonomous()
 			break;
 
    }
-
+*/
 }
 
 task usercontrol()

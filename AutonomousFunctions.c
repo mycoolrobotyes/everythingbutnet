@@ -31,21 +31,21 @@ void RightTurnForTime(int time)
 
 void LeftTurnForTime(int time)
 {
-	drive(0,0);
+	drive(127,-127);
 	wait10Msec(time);
 	AllStop();
 }
 
 void FastForwardForTime(int time)
 {
-	drive(0,0);
+	drive(127,127);
 	wait10Msec(time);
 	drive(0,0);
 }
 
 void FastBackwardsForTime(int time)
 {
-	drive(0,0);
+	drive(-127,-127);
 	wait1Msec(time);
 	AllStop();
 }

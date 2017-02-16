@@ -4,5 +4,5 @@ const char *autonomous3Name = "Hang!";
 
 void Autonomous3(void)
 {
-   LauncherUp(100);
+FastForwardForTime(156);
 }
