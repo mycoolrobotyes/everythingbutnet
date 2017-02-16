@@ -111,7 +111,6 @@ void pre_auton()
 
 task autonomous()
 {
-Autonomous1();
 
 
 	switch(autoMode)

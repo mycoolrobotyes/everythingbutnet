@@ -8,7 +8,12 @@ void Autonomous1(void)
   LeftTurnForTime(60);
   FastForwardForTime(70);
   LeftTurnForTime(60);
+  ClawOpen();
+  FastBackwardsForTime(40);
   ClawClose();
-  FastBackwardsForTime(50);
+  FastForwardForTime(20);
+  ClawClose();
+  FastForwardForTime(20);
+  armup();
   ClawOpen();
 }
