@@ -1,4 +1,4 @@
-const int MainTime = 500;
+const int MainTime = 200;
 const int PartTime = 100;
 const int SmallTime = 70;
 const int SmallerTime = 45;
@@ -46,7 +46,7 @@ void FastForwardForTime(int time)
 void FastBackwardsForTime(int time)
 {
 	drive(-127,-127);
-	wait1Msec(time);
+	wait10Msec(time);
 	AllStop();
 }
 
@@ -67,6 +67,11 @@ void armdown()
    }
 }
 
+void armstop()
+{
+  	launcher(0);
+
+}
 void ClawOpen(void)
 {
  	motor[Claw1] = -127;
@@ -76,6 +81,15 @@ void ClawOpen(void)
  	motor[Claw2] = 0;
 }
 
+void Clawletgo(void)
+{
+
+ 	motor[Claw1] = -127;
+ 	motor[Claw2] = -127;
+  wait10Msec(40);
+ 	motor[Claw1] = 0;
+ 	motor[Claw2] = 0;
+}
 void ClawClose(void)
 {
  	motor[Claw1] = 127;
