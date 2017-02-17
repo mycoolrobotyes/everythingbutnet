@@ -69,6 +69,43 @@ task main()
 		clearLCDLine(0);
 		clearLCDLine(1);
 		displayLCDPos(0, 0);
+clearLCDLine(0);
+		clearLCDLine(1);
+		int BtnPressed;
+		 	BtnPressed = nLCDButtons;
+		 	autoMode = BtnPressed;
+
+			// display the choice on the LCD
+			displayLCDPos(0, 0);
+					if (BtnPressed == 1)
+		 			{
+		 				switch(autoMode)
+		 				{
+		 					case 0:
+								displayNextLCDString("pickupbox");
+								break;
+							}
+					}
+
+					if (BtnPressed == 2)
+					{
+						switch(autoMode)
+						{
+							case 1:
+								displayNextLCDString("simple");
+								break;
+						}
+					}
+
+					if (BtnPressed == 4)
+					{
+						switch(autoMode)
+						{
+							case 2:
+								displayNextLCDString("Hang");
+								break;
+						}
+					}
 
 		while (bIfiRobotDisabled)
 		{
