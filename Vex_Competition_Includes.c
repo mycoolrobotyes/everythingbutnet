@@ -109,7 +109,7 @@ clearLCDLine(0);
 
 		while (bIfiRobotDisabled)
 		{
-		  displayLCDPos(0, 0);
+		  displayLCDPos(1, 0);
 		  displayNextLCDString("Disabled");
 		  nTimeXX = 0;
 			while (true)
