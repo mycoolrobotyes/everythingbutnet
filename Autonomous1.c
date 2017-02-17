@@ -5,8 +5,8 @@ void Autonomous1(void)
 {
 	FastForwardForTime(240);
 	wait10Msec(PartTime);
-  LeftTurnForTime(70);
-  FastForwardForTime(200);
+  LeftTurnForTime(62);
+  FastForwardForTime(180);
   LeftTurnForTime(60);
   FastBackwardsForTime(40);
   ClawClose2();
