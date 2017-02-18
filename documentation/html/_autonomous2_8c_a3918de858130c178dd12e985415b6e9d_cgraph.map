@@ -1,7 +1,0 @@
-<map id="Autonomous2" name="Autonomous2">
-<area shape="rect" id="node2" href="$_autonomous_functions_8c.html#a96c3d131b838ddd04c1015a5e48f9a36" title="FastForwardForTime" alt="" coords="157,5,302,31"/>
-<area shape="rect" id="node4" href="$_autonomous_functions_8c.html#a5c74f2f61819d886afdb60b19ad43a9c" title="ClawClose2" alt="" coords="183,55,276,80"/>
-<area shape="rect" id="node5" href="$_autonomous_functions_8c.html#af127f857e42a692723eadc8edcc648ef" title="armup" alt="" coords="200,104,259,129"/>
-<area shape="rect" id="node3" href="$_motor_functions_8c.html#a6de04b277d27e55c4c6ca5cef4beaf95" title="drive" alt="" coords="361,5,412,31"/>
-<area shape="rect" id="node6" href="$_motor_functions_8c.html#a391636171e23faebe6615d053c8cf015" title="launcher" alt="" coords="350,104,423,129"/>
-</map>

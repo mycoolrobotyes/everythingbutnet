@@ -1,9 +1,0 @@
-<map id="MissionImpossible" name="MissionImpossible">
-<area shape="rect" id="node2" href="$_r_t_t_t_l_8c.html#a7473e9a04dc2e8f05241857d86586194" title="stopMusic" alt="" coords="184,103,265,128"/>
-<area shape="rect" id="node8" href="$_r_t_t_t_l_8c.html#a3bdf00f58b150cbafaecb1cebf776bd2" title="playMissionImpossible" alt="" coords="313,153,468,179"/>
-<area shape="rect" id="node3" href="$_r_t_t_t_l_8c.html#ad8424e848a1536bc015b2d641f536fdf" title="playStarWars" alt="" coords="340,5,441,31"/>
-<area shape="rect" id="node6" href="$_r_t_t_t_l_8c.html#ab891d0e6c9e2d9625e06610856e39de5" title="playYaketysax" alt="" coords="337,55,443,80"/>
-<area shape="rect" id="node7" href="$_r_t_t_t_l_8c.html#a85632a606fabc4f36f4ba9eb7d8b9392" title="playAxelF" alt="" coords="350,104,430,129"/>
-<area shape="rect" id="node4" href="$_vex___competition___includes_8c.html#a99a39462aa5b36444a05e4b22d8720b3" title="This is the task for managing the user control. " alt="" coords="516,80,603,105"/>
-<area shape="rect" id="node5" href="$_vex___competition___includes_8c.html#a9a2af8e2cd81255d3bf384db4a382807" title="This is where C starts. " alt="" coords="651,80,701,105"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="RedBlueRightSide" name="RedBlueRightSide">
-<area shape="rect" id="node2" href="$_autonomous_functions_8c.html#a96c3d131b838ddd04c1015a5e48f9a36" title="FastForwardForTime" alt="" coords="360,5,505,31"/>
-<area shape="rect" id="node4" href="$_autonomous_functions_8c.html#a380386f1d1b05ffa4f6f16c594f74280" title="LeftTurnForTime" alt="" coords="188,56,308,81"/>
-<area shape="rect" id="node6" href="$_motor_functions_8c.html#a391636171e23faebe6615d053c8cf015" title="launcher" alt="" coords="212,105,284,131"/>
-<area shape="rect" id="node7" href="$_autonomous_functions_8c.html#a58d342b136d7b0fc200c860cbe4101ff" title="RightTurnForTime" alt="" coords="184,155,312,180"/>
-<area shape="rect" id="node3" href="$_motor_functions_8c.html#a6de04b277d27e55c4c6ca5cef4beaf95" title="drive" alt="" coords="553,81,604,107"/>
-<area shape="rect" id="node5" href="$_autonomous_functions_8c.html#a08e6ba4f21161dab48a5847cb5ea4fe7" title="AllStop" alt="" coords="401,107,465,132"/>
-</map>

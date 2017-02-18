@@ -1,4 +1,0 @@
-<map id="LeftTurnForTime" name="LeftTurnForTime">
-<area shape="rect" id="node2" href="$_motor_functions_8c.html#a6de04b277d27e55c4c6ca5cef4beaf95" title="drive" alt="" coords="285,5,335,31"/>
-<area shape="rect" id="node3" href="$_autonomous_functions_8c.html#a08e6ba4f21161dab48a5847cb5ea4fe7" title="AllStop" alt="" coords="173,31,237,56"/>
-</map>

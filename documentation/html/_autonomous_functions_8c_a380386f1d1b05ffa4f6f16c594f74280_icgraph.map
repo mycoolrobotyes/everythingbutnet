@@ -1,7 +1,0 @@
-<map id="LeftTurnForTime" name="LeftTurnForTime">
-<area shape="rect" id="node2" href="$_autonomous1_8c.html#a6531bd519cbf79b9fa983e13b7210e4d" title="Autonomous1" alt="" coords="186,5,290,31"/>
-<area shape="rect" id="node5" href="$_red_blue_left_side_8c.html#abf9e3bac9aac352ef41cbcc3dec102ee" title="RedBlueLeftSide" alt="" coords="177,55,299,80"/>
-<area shape="rect" id="node6" href="$_red_blue_right_side_8c.html#a0338c4f445f50ee95f8608cd07d9b670" title="RedBlueRightSide" alt="" coords="173,104,303,129"/>
-<area shape="rect" id="node3" href="$_vex___competition___includes_8c.html#a371bbbbc61aa430884cb77eb56b3df53" title="This is the task for running autonomous. " alt="" coords="351,5,446,31"/>
-<area shape="rect" id="node4" href="$_vex___competition___includes_8c.html#a9a2af8e2cd81255d3bf384db4a382807" title="This is where C starts. " alt="" coords="494,5,544,31"/>
-</map>
