@@ -1,0 +1,15 @@
+<map id="drive" name="drive">
+<area shape="rect" id="node2" href="$_autonomous_functions_8c.html#a08e6ba4f21161dab48a5847cb5ea4fe7" title="AllStop" alt="" coords="104,33,167,58"/>
+<area shape="rect" id="node3" href="$_autonomous_functions_8c.html#a58d342b136d7b0fc200c860cbe4101ff" title="RightTurnForTime" alt="" coords="232,10,360,36"/>
+<area shape="rect" id="node6" href="$_autonomous_functions_8c.html#a380386f1d1b05ffa4f6f16c594f74280" title="LeftTurnForTime" alt="" coords="236,60,356,85"/>
+<area shape="rect" id="node10" href="$_autonomous_functions_8c.html#abe1be14bbd7661dac3a76ff8a0d3fb46" title="FastBackwardsForTime" alt="" coords="215,185,377,210"/>
+<area shape="rect" id="node12" href="$_autonomous_functions_8c.html#a96c3d131b838ddd04c1015a5e48f9a36" title="FastForwardForTime" alt="" coords="223,134,369,160"/>
+<area shape="rect" id="node4" href="$_red_blue_left_side_8c.html#abf9e3bac9aac352ef41cbcc3dec102ee" title="RedBlueLeftSide" alt="" coords="429,10,551,36"/>
+<area shape="rect" id="node5" href="$_red_blue_right_side_8c.html#a0338c4f445f50ee95f8608cd07d9b670" title="RedBlueRightSide" alt="" coords="425,60,555,85"/>
+<area shape="rect" id="node7" href="$_autonomous1_8c.html#a6531bd519cbf79b9fa983e13b7210e4d" title="Autonomous1" alt="" coords="438,109,542,134"/>
+<area shape="rect" id="node8" href="$_vex___competition___includes_8c.html#a371bbbbc61aa430884cb77eb56b3df53" title="This is the task for running autonomous. " alt="" coords="603,158,698,184"/>
+<area shape="rect" id="node9" href="$_vex___competition___includes_8c.html#a9a2af8e2cd81255d3bf384db4a382807" title="This is where C starts. " alt="" coords="746,158,796,184"/>
+<area shape="rect" id="node11" href="$_autonomous_skills_8c.html#ab44df4cae6b11f3972c7a3005b5eb326" title="AutonomousSkills" alt="" coords="426,257,554,282"/>
+<area shape="rect" id="node13" href="$_autonomous2_8c.html#a3918de858130c178dd12e985415b6e9d" title="Autonomous2" alt="" coords="438,158,542,184"/>
+<area shape="rect" id="node14" href="$_autonomous3_8c.html#a45aa3d4e9420b5fefebfd4333e23de05" title="Autonomous3" alt="" coords="438,208,542,233"/>
+</map>

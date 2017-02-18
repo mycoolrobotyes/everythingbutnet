@@ -1,0 +1,11 @@
+<map id="AllStop" name="AllStop">
+<area shape="rect" id="node2" href="$_autonomous_functions_8c.html#a58d342b136d7b0fc200c860cbe4101ff" title="RightTurnForTime" alt="" coords="133,5,262,31"/>
+<area shape="rect" id="node5" href="$_autonomous_functions_8c.html#a380386f1d1b05ffa4f6f16c594f74280" title="LeftTurnForTime" alt="" coords="138,55,258,80"/>
+<area shape="rect" id="node9" href="$_autonomous_functions_8c.html#abe1be14bbd7661dac3a76ff8a0d3fb46" title="FastBackwardsForTime" alt="" coords="117,104,279,129"/>
+<area shape="rect" id="node3" href="$_red_blue_left_side_8c.html#abf9e3bac9aac352ef41cbcc3dec102ee" title="RedBlueLeftSide" alt="" coords="331,5,452,31"/>
+<area shape="rect" id="node4" href="$_red_blue_right_side_8c.html#a0338c4f445f50ee95f8608cd07d9b670" title="RedBlueRightSide" alt="" coords="327,55,457,80"/>
+<area shape="rect" id="node6" href="$_autonomous1_8c.html#a6531bd519cbf79b9fa983e13b7210e4d" title="Autonomous1" alt="" coords="340,104,443,129"/>
+<area shape="rect" id="node7" href="$_vex___competition___includes_8c.html#a371bbbbc61aa430884cb77eb56b3df53" title="This is the task for running autonomous. " alt="" coords="505,104,600,129"/>
+<area shape="rect" id="node8" href="$_vex___competition___includes_8c.html#a9a2af8e2cd81255d3bf384db4a382807" title="This is where C starts. " alt="" coords="648,104,698,129"/>
+<area shape="rect" id="node10" href="$_autonomous_skills_8c.html#ab44df4cae6b11f3972c7a3005b5eb326" title="AutonomousSkills" alt="" coords="328,153,455,179"/>
+</map>

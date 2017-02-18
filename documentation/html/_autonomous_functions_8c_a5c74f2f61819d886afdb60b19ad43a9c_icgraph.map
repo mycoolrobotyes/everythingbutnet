@@ -1,0 +1,6 @@
+<map id="ClawClose2" name="ClawClose2">
+<area shape="rect" id="node2" href="$_autonomous1_8c.html#a6531bd519cbf79b9fa983e13b7210e4d" title="Autonomous1" alt="" coords="146,5,249,31"/>
+<area shape="rect" id="node5" href="$_autonomous2_8c.html#a3918de858130c178dd12e985415b6e9d" title="Autonomous2" alt="" coords="146,55,249,80"/>
+<area shape="rect" id="node3" href="$_vex___competition___includes_8c.html#a371bbbbc61aa430884cb77eb56b3df53" title="This is the task for running autonomous. " alt="" coords="297,31,392,56"/>
+<area shape="rect" id="node4" href="$_vex___competition___includes_8c.html#a9a2af8e2cd81255d3bf384db4a382807" title="This is where C starts. " alt="" coords="440,31,490,56"/>
+</map>

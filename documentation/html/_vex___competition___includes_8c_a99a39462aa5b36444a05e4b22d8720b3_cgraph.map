@@ -1,0 +1,15 @@
+<map id="usercontrol" name="usercontrol">
+<area shape="rect" id="node2" href="$_r_t_t_t_l_8c.html#ab891d0e6c9e2d9625e06610856e39de5" title="playYaketysax" alt="" coords="165,95,271,120"/>
+<area shape="rect" id="node8" href="$_r_t_t_t_l_8c.html#a85632a606fabc4f36f4ba9eb7d8b9392" title="playAxelF" alt="" coords="178,144,258,169"/>
+<area shape="rect" id="node9" href="$_r_t_t_t_l_8c.html#ad8424e848a1536bc015b2d641f536fdf" title="playStarWars" alt="" coords="168,45,268,71"/>
+<area shape="rect" id="node10" href="$_r_t_t_t_l_8c.html#a3bdf00f58b150cbafaecb1cebf776bd2" title="playMissionImpossible" alt="" coords="141,193,295,219"/>
+<area shape="rect" id="node11" href="$command_01code_8c.html#ad09e5c67f6c484fd5c77afb9ca2d6fa4" title="Drive" alt="" coords="192,243,244,268"/>
+<area shape="rect" id="node13" href="$command_01code_8c.html#ab634473f3ed3d6da5b7deb40aacb16ed" title="Launchers" alt="" coords="176,293,260,319"/>
+<area shape="rect" id="node3" href="$_r_t_t_t_l_8c.html#a7473e9a04dc2e8f05241857d86586194" title="stopMusic" alt="" coords="343,93,425,119"/>
+<area shape="rect" id="node5" href="$_r_t_t_t_l_8c.html#a3fe6e10e18bc9db2417cc6c7e49f05bd" title="Yaketysax" alt="" coords="497,80,579,105"/>
+<area shape="rect" id="node4" href="$_r_t_t_t_l_8c.html#ac8417d4e80c1bae150b28ba0a9533518" title="StarWars" alt="" coords="500,5,576,31"/>
+<area shape="rect" id="node6" href="$_r_t_t_t_l_8c.html#a574debbd42d267de576445a6c00a90ae" title="AxelF" alt="" coords="510,137,566,163"/>
+<area shape="rect" id="node7" href="$_r_t_t_t_l_8c.html#af1db60c70f3fcf22ead91c67a2991050" title="MissionImpossible" alt="" coords="473,187,603,212"/>
+<area shape="rect" id="node12" href="$_drive_8c.html#a428bc93ffd3620cb44436d160b9c9724" title="deadband" alt="" coords="344,245,424,271"/>
+<area shape="rect" id="node14" href="$_motor_functions_8c.html#a391636171e23faebe6615d053c8cf015" title="launcher" alt="" coords="348,295,420,320"/>
+</map>

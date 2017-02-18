@@ -1,0 +1,12 @@
+<map id="AutonomousSkills" name="AutonomousSkills">
+<area shape="rect" id="node2" href="$_autonomous_functions_8c.html#a96c3d131b838ddd04c1015a5e48f9a36" title="FastForwardForTime" alt="" coords="390,36,536,62"/>
+<area shape="rect" id="node4" href="$_autonomous_functions_8c.html#a5b881874ba2b593769162bbc9df6c17d" title="ClawOpen" alt="" coords="220,36,303,62"/>
+<area shape="rect" id="node5" href="$_autonomous_functions_8c.html#af127f857e42a692723eadc8edcc648ef" title="armup" alt="" coords="232,86,291,111"/>
+<area shape="rect" id="node7" href="$_autonomous_functions_8c.html#acdba6d031da4f86b4910010f920a466b" title="LauncherUp" alt="" coords="214,135,308,160"/>
+<area shape="rect" id="node8" href="$_autonomous_functions_8c.html#a97fa6c7d98062d361c0b29f420ee2d1f" title="ClawClose" alt="" coords="219,184,304,210"/>
+<area shape="rect" id="node9" href="$_autonomous_functions_8c.html#abe1be14bbd7661dac3a76ff8a0d3fb46" title="FastBackwardsForTime" alt="" coords="181,283,342,308"/>
+<area shape="rect" id="node11" href="$_autonomous_functions_8c.html#a41ea8101cab0df55951b464c1e49b62b" title="LauncherDown" alt="" coords="206,234,317,259"/>
+<area shape="rect" id="node3" href="$_motor_functions_8c.html#a6de04b277d27e55c4c6ca5cef4beaf95" title="drive" alt="" coords="584,232,634,258"/>
+<area shape="rect" id="node6" href="$_motor_functions_8c.html#a391636171e23faebe6615d053c8cf015" title="launcher" alt="" coords="427,135,499,160"/>
+<area shape="rect" id="node10" href="$_autonomous_functions_8c.html#a08e6ba4f21161dab48a5847cb5ea4fe7" title="AllStop" alt="" coords="431,283,495,308"/>
+</map>

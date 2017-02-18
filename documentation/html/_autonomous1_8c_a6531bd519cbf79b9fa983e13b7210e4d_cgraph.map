@@ -1,0 +1,13 @@
+<map id="Autonomous1" name="Autonomous1">
+<area shape="rect" id="node2" href="$_autonomous_functions_8c.html#a96c3d131b838ddd04c1015a5e48f9a36" title="FastForwardForTime" alt="" coords="367,5,512,31"/>
+<area shape="rect" id="node4" href="$_autonomous_functions_8c.html#a380386f1d1b05ffa4f6f16c594f74280" title="LeftTurnForTime" alt="" coords="178,57,298,83"/>
+<area shape="rect" id="node6" href="$_autonomous_functions_8c.html#abe1be14bbd7661dac3a76ff8a0d3fb46" title="FastBackwardsForTime" alt="" coords="157,107,319,132"/>
+<area shape="rect" id="node7" href="$_autonomous_functions_8c.html#a5c74f2f61819d886afdb60b19ad43a9c" title="ClawClose2" alt="" coords="192,156,284,181"/>
+<area shape="rect" id="node8" href="$_autonomous_functions_8c.html#a97fa6c7d98062d361c0b29f420ee2d1f" title="ClawClose" alt="" coords="195,205,280,231"/>
+<area shape="rect" id="node9" href="$_autonomous_functions_8c.html#af127f857e42a692723eadc8edcc648ef" title="armup" alt="" coords="208,255,267,280"/>
+<area shape="rect" id="node11" href="$_autonomous_functions_8c.html#a152f2f4c6f48bd8ac97b0cfab5333875" title="Clawletgo" alt="" coords="198,304,278,329"/>
+<area shape="rect" id="node12" href="$_autonomous_functions_8c.html#a5c8a04d7f82087587f4cdb52a5972d9d" title="armstop" alt="" coords="203,353,273,379"/>
+<area shape="rect" id="node3" href="$_motor_functions_8c.html#a6de04b277d27e55c4c6ca5cef4beaf95" title="drive" alt="" coords="560,81,610,107"/>
+<area shape="rect" id="node5" href="$_autonomous_functions_8c.html#a08e6ba4f21161dab48a5847cb5ea4fe7" title="AllStop" alt="" coords="407,107,471,132"/>
+<area shape="rect" id="node10" href="$_motor_functions_8c.html#a391636171e23faebe6615d053c8cf015" title="launcher" alt="" coords="403,304,475,329"/>
+</map>
