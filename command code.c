@@ -59,24 +59,19 @@ void pre_auton()
 
 task autonomous()
 {
-
- //Autonomous1();
-
-
 	switch(autoMode)
 	{
-		case 0:
+		default:
+		case 1:
 			Autonomous1();
 			break;
-		case 1:
+		case 2:
 			Autonomous2();
 			break;
-		case 2:
+		case 3:
 			Autonomous3();
 			break;
-
    }
-
 }
 
 task usercontrol()
