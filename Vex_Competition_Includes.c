@@ -58,20 +58,21 @@ static int runMenuSelector(void)
 
 	clearLCDLine(0);
 	clearLCDLine(1);
-	displayLCDPos(0, 0);
+	setLCDPosition(0, 0);
 	displayNextLCDString("Menu Selector");
 
-	displayLCDPos(0, 1);
+	setLCDPosition(1, 0);
 	displayNextLCDString("PICK");
 
-	displayLCDPos(4, 1);
+	setLCDPosition(1, 4);
 	displayNextLCDString("SIMP");
 
-	displayLCDPos(12, 1);
+	setLCDPosition(1,12);
 	displayNextLCDString("HANG");
 
 	selected = false;
-	while(timeOut < 3000 && !selected) // milliseconds to run the selector
+	timeout = 0;
+	while(timeout < 12000 && !selected) // milliseconds to run the selector
 	{
 		int buttons = nLCDButtons;
 		switch(buttons) ///< read the current LCD button state
@@ -83,7 +84,7 @@ static int runMenuSelector(void)
 			default: ///< undefined button combination
 				selected = false;
 				autoMode = 1;
-				break;	
+				break;
 
 			case 1: ///< left button pressed
 				selected = true;
@@ -106,19 +107,19 @@ static int runMenuSelector(void)
 	// print our choice
 	clearLCDLine(0);
 	clearLCDLine(1);
-	displayLCDPos(0, 0);
+	setLCDPosition(0, 0);
 	switch(autoMode)
 	{
-		default: 
+		default:
 			autoMode = 1;
-		case 1: 
-			displayNextLCDString("pickupbox"); 
+		case 1:
+			displayNextLCDString("pickupbox");
 			break;
-		case 2: 
-			displayNextLCDString("simple"); 
+		case 2:
+			displayNextLCDString("simple");
 			break;
-		case 3: 
-			displayNextLCDString("Hang"); 
+		case 3:
+			displayNextLCDString("Hang");
 			break;
 	}
 
@@ -164,7 +165,7 @@ task main()
 					displayStatusAndTime();
 					if (!bIfiRobotDisabled)
 					break;
-					wait1Msec(25);					
+					wait1Msec(25);
 				}
 				++nTimeXX;
 			}
@@ -241,7 +242,7 @@ void allMotorsOff()
 /// @brief stop all running tasks
 ///
 /// this function stops all tasks by attempting to stop all possible tasks that could be running.
-/// 
+///
 void allTasksStop()
 {
   stopTask(1);

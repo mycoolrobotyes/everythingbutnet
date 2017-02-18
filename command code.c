@@ -32,73 +32,21 @@ short autoMode;
 #include "AutonomousSkills.c"
 
 
-void Drive(void)
+void Driver(void)
 {
 		// motors driven by the sticks
-		motor[LFmotor] = deadband(vexRT(Ch3));
-		motor[RFmotor] = deadband(vexRT(Ch2));
-		motor[LBmotor] = deadband(vexRT(Ch3));
-		motor[RBmotor] = deadband(vexRT(Ch2));
+    drive(deadband(vexRT[Ch3]),deadband(vexRT[Ch2]));
+
+
 }
 
 
 void Launchers(void)
 {
-int arm_speed = 0;
-
- if (vexRT[Btn5DXmtr2] == 1)
- {
-  arm_speed = 127;
- }
-
- else if (vexRT[Btn5UXmtr2] == 1)
- {
-  arm_speed = -127;
- }
- else
- {
-   arm_speed = 0;
- }
-
- if (vexRT[Btn6UXmtr2] == 1)
- {
-  	motor[Claw1] = 127;
-  	motor[Claw2] = 127;
- }
-
- else if (vexRT[Btn6DXmtr2] == 1)
- {
-  	motor[Claw1] = -127;
-  	motor[Claw2] = -127;
- }
- else
- {
-  	motor[Claw1] = 0;
-  	motor[Claw2] = 0;
- }
-	//arm_speed = deadband(vexRT(Ch3Xmtr2));
-
-	writeDebugStream("%d : ",arm_speed);
-	if(arm_speed < 0)
-	{
-		if(SensorValue(Potentiometer2) > 2700)
-		{
-			arm_speed = 0;
-			writeDebugStream("LimitReached\n");
-		}
-	}
-	/*
-	else if(arm_speed > 0)
-	{
-		if(SensorValue(Potentiometer2) < 160)
-		{
-			arm_speed = 0;
-		}
-	}
-	*/
-	writeDebugStream("%d\n",arm_speed);
-	launcher(arm_speed);
+	launcher(deadband(vexRT[Ch3Xmtr2]));
+	claw(deadband(vexRT[Ch2Xmtr2]));
 }
+
 void pre_auton()
 {
 	// Set bStopTasksBetweenModes to false if you want to keep user created tasks runningbetween
@@ -160,7 +108,7 @@ task usercontrol()
 			playMissionImpossible();
 		}
 
-		Drive();
+		Driver();
 		Launchers();
 		writeDebugStream("%d\n",SensorValue(Potentiometer2));
 	}
