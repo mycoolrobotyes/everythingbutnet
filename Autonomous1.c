@@ -3,6 +3,10 @@ const char *autonomous1Name = "pickupbox";
 
 void Autonomous1(void)
 {
+  clearLCDLine(1);
+  setLCDPosition(1, 0);
+  displayNextLCDString("Running pickupbox");
+  
 	FastForwardForTime(240);
 	wait10Msec(PartTime);
   LeftTurnForTime(62);

@@ -17,6 +17,13 @@ void launcher(int speed)
 	motor[launcher3] = speed;
 	motor[launcher4] = speed;
 }
+void claw(int speed)
+{
+
+ 	motor[Claw1] = speed;
+ 	motor[Claw2] = speed;
+
+}
 
 /*
 int motorValue = 0;
