@@ -73,8 +73,7 @@ static int runMenuSelector(void)
 	selected = false;
 	while(timeOut < 3000 && !selected) // milliseconds to run the selector
 	{
-		int buttons = nLCDButtons;
-		switch(buttons) ///< read the current LCD button state
+		switch(nLCDButtons) ///< read the current LCD button state
 		{
 			case 0: ///< No Button Pressed
 				selected = false;
