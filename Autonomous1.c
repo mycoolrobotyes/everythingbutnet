@@ -6,18 +6,18 @@ void Autonomous1(void)
   clearLCDLine(1);
   setLCDPosition(1, 0);
   displayNextLCDString("Running pickupbox");
-  
-	FastForwardForTime(240);
+
+	FastForwardForTime(150);
 	wait10Msec(PartTime);
-  LeftTurnForTime(62);
-  FastForwardForTime(180);
-  LeftTurnForTime(60);
-  FastBackwardsForTime(40);
+  LeftTurnForTime(39);
+  FastForwardForTime(113);
+  LeftTurnForTime(38);
+  FastBackwardsForTime(25);
   ClawClose2();
-  FastForwardForTime(70);
+  FastForwardForTime(44);
   ClawClose();
   armup();
-  FastBackwardsForTime(70);
+  FastBackwardsForTime(44);
   wait10Msec(MainTime);
   Clawletgo();
   armstop();
