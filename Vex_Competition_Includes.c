@@ -91,17 +91,17 @@ clearLCDLine(0);
 					{
 						switch(autoMode)
 						{
-							case 1:
+							case 2:
 								displayNextLCDString("simple");
 								break;
 						}
 					}
 
-					if (BtnPressed == 3)
+					if (BtnPressed == 4)
 					{
 						switch(autoMode)
 						{
-							case 2:
+							case 3:
 								displayNextLCDString("Hang");
 								break;
 						}
