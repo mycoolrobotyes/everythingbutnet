@@ -9,7 +9,7 @@ void Autonomous1(void)
 
 	FastForwardForTime(150);
 	wait10Msec(PartTime);
-  LeftTurnForTime(39);
+  LeftTurnForTime(57);
   FastForwardForTime(113);
   LeftTurnForTime(38);
   FastBackwardsForTime(25);
@@ -17,8 +17,11 @@ void Autonomous1(void)
   FastForwardForTime(44);
   ClawClose();
   armup();
-  FastBackwardsForTime(44);
+  FastBackwardsForTime(53);
   wait10Msec(MainTime);
   Clawletgo();
   armstop();
+  ClawClose();
+  FastBackwardsForTime(30);
+  armdown();
 }

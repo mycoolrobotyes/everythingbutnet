@@ -86,7 +86,7 @@ void Clawletgo(void)
 
  	motor[Claw1] = -127;
  	motor[Claw2] = -127;
-  wait10Msec(40);
+  wait10Msec(50);
  	motor[Claw1] = 0;
  	motor[Claw2] = 0;
 }
