@@ -23,5 +23,4 @@ void Autonomous1(void)
   armstop();
   ClawClose();
   FastBackwardsForTime(30);
-  armdown();
 }

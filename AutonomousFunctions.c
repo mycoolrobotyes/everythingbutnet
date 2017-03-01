@@ -61,10 +61,13 @@ void armup()
 
 void armdown()
 {
+	/*
 	if(SensorValue(Potentiometer1) > 2160)
+
   {
+
+  }	*/
   	launcher(127);
-  }
 }
 
 void armstop()
