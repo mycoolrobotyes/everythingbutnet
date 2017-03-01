@@ -81,7 +81,7 @@ clearLCDLine(0);
 		 			{
 		 				switch(autoMode)
 		 				{
-		 					case 0:
+		 					case 1:
 								displayNextLCDString("pickupbox");
 								break;
 							}
@@ -97,7 +97,7 @@ clearLCDLine(0);
 						}
 					}
 
-					if (BtnPressed == 4)
+					if (BtnPressed == 3)
 					{
 						switch(autoMode)
 						{
